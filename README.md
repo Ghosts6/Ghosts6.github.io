@@ -28,3 +28,17 @@ About Me<br>Hey there! 👋 I'm Kiarash, a passionate 19-year-old studying Compu
 [![](https://visitcount.itsvg.in/api?id=Ghosts6&icon=2&color=8)](https://visitcount.itsvg.in)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+
+###
+
+<br clear="both">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake.svg">
+</picture>
+
+_generated with [Platane/snk](https://github.com/Platane/snk)_
+
+###
