@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="msapplication-TileColor" content="#603cba">
@@ -14,10 +14,15 @@
     <title>GitHub Readme - Kiarash Bashokian</title>
 </head>
 <body>
+    <div id="particles-js"></div>
+    <a href="https://kiarashbashokian.com" target="_blank">
+        <img src="logo.png" alt="Your Logo" class="logo">
+    </a>
 
 <!-- 💫 About Me Section -->
-# 💫 About Me:
+ 
 <div id="scrollable-content">
+    💫 About Me:
     <h1>Hey there! 👋 I'm Kiarash:</h1>
     <p>
         a passionate 19-year-old studying Computer Science with a keen interest in web development.
@@ -27,53 +32,84 @@
         and handle various technical challenges. And many other things like Linux (Arch/Ubuntu/Debian), CCNA, Network+, VCP-ICM, and Backup Exec.
     </p>
 
-<!-- 🌐 Socials Section -->
-## 🌐 Socials:
+<!-- 🌐 Socials Section --> 
     <section>
-        <h2>Socials:</h2>
+    🌐 Socials:
         <ul>
-            <li><i class="fab fa-discord"></i> [Discord](https://discord.gg/ghost.rs6)</li>
-            <li><i class="fab fa-instagram"></i> [Instagram](https://instagram.com/kiarash82.42?igshid=OGQ5ZDc2ODk2ZA==)</li>
-            <li><i class="fab fa-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/kiarashbashokian?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BNacNg3ZESE2Aqtxrj0XmUw%3D%3D)</li>
-            <li><i class="fab fa-stack-overflow"></i> [Stack Overflow](https://stackoverflow.com/users/17490586)</li>
-            <li><i class="fab fa-twitch"></i> [Twitch](https://twitch.tv/MKGHOSTK)</li>
-            <li><i class="fab fa-youtube"></i> [YouTube](https://youtube.com/@https://youtube.com/@https://youtube.com/@kiarashbashokian6411)</li>
+        <li><i class="fab fa-discord"></i> <a href="https://discord.gg/ghost.rs6">Discord</a></li>
+        <li><i class="fab fa-instagram"></i> <a href="https://instagram.com/kiarash82.42?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a></li>
+        <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/kiarashbashokian?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BNacNg3ZESE2Aqtxrj0XmUw%3D%3D">LinkedIn</a></li>
+        <li><i class="fab fa-stack-overflow"></i> <a href="https://stackoverflow.com/users/17490586">Stack Overflow</a></li>
+        <li><i class="fab fa-twitch"></i> <a href="https://twitch.tv/MKGHOSTK">Twitch</a></li>
+        <li><i class="fab fa-youtube"></i> <a href="https://youtube.com/@https://youtube.com/@https://youtube.com/@kiarashbashokian6411">YouTube</a></li>
         </ul>
     </section>
 
 <!-- 💻 Tech Stack Section -->
-# 💻 Tech Stack:
-    <section>
-        <h2>Tech Stack:</h2>
+        <section>
+    💻 Tech Stack:
         <ul>
-            <li><i class="fab fa-cuttlefish"></i> [C++](https://img.shields.io/badge/c++-%2300599C.svg?style=plastic&logo=c%2B%2B&logoColor=white)</li>
-            <li><i class="fab fa-cuttlefish"></i> [C](https://img.shields.io/badge/c-%2300599C.svg?style=plastic&logo=c&logoColor=white)</li>
-            <!-- Add more tech stack badges with corresponding Font Awesome icons -->
+        <li><i class="fab fa-cuttlefish"></i> C++</li>
+        <li><i class="fab fa-cuttlefish"></i> C</li>
+        <li><i class="fab fa-js"></i> JavaScript</li>
+        <li><i class="fab fa-html5"></i> HTML</li>
+        <li><i class="fab fa-python"></i> Python</li>
+        <li><i class="fab fa-django"></i> Django</li>
+        <li><i class="fab fa-flask"></i> Flask</li>
+        <li><i class="fas fa-terminal"></i> Bash</li>
+        <li><i class="fab fa-linux"></i> Linux</li>
+        <li><i class="fas fa-database"></i> SQL</li>
+        <li><i class="fas fa-database"></i> PostgreSQL</li>
+        <li><i class="fab fa-docker"></i> Docker</li>
+        <li><i class="fab fa-mongodb"></i> MongoDB</li>
+        <li><i class="fas fa-terminal"></i> Shell Script</li>
+        <li><i class="fab fa-powershell"></i> PowerShell</li>
+        <li><i class="fab fa-qt"></i> Qt</li>
         </ul>
     </section>
 
-<!-- 📊 GitHub Stats Section -->
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=Ghosts6&theme=chartreuse-dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://github-readme-streak-stats.herokuapp.com/?user=Ghosts6&theme=chartreuse-dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Ghosts6&theme=chartreuse-dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+    <!-- 📊 GitHub Stats Section -->
+    <section id="github-stats">
+        📊 GitHub Stats: 
+        <div class="stats-container">
+            <img src="https://github-readme-stats.vercel.app/api?username=Ghosts6&theme=chartreuse-dark&hide_border=false&include_all_commits=true&count_private=true" alt="GitHub Stats">
+        </div>
+        <div class="stats-container">
+            <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ghosts6&theme=chartreuse-dark&hide_border=false" alt="GitHub Streak Stats">
+        </div>
+        <div class="stats-container">
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ghosts6&theme=chartreuse-dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="Top Languages">
+        </div>
+    </section>
 
-<!-- 🏆 GitHub Trophies Section -->
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=Ghosts6&theme=monokai&no-frame=false&no-bg=true&margin-w=4)
+<section id="github-trophies">
+    🏆 GitHub Trophies :
+    <br>
+    <div class="trophy-container">
+        <img src="https://github-profile-trophy.vercel.app/?username=Ghosts6&theme=monokai&no-frame=false&no-bg=true&margin-w=4" alt="GitHub Trophies">
+    </div>
+</section>
 
-<!-- ✍️ Random Dev Quote Section -->
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=vetical&theme=tokyonight)
+    <section>
+        ✍️ Random Dev Quote :
+        <br>
+        <img src="https://quotes-github-readme.vercel.app/api?type=vertical&theme=tokyonight" alt="Random Dev Quote">
+    </section>
 
-<!-- 🔝 Top Contributed Repo Section -->
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=Ghosts6&limit=5&theme=tokyonight&combine_all_yearly_contributions=true)
+    <section>
+        🔝 Top Contributed Repo :
+        <br>
+        <img src="https://github-contributor-stats.vercel.app/api?username=Ghosts6&limit=5&theme=tokyonight&combine_all_yearly_contributions=true" alt="Top Contributed Repositories">
+    </section>
 
-<!-- 😂 Random Dev Meme Section -->
-### 😂 Random Dev Meme
-<img src='https://randommeme-five.vercel.app/' style="height: 400px;"/>
+    <section id="dev-meme">
+        😂 Random Dev Meme :
+        <div class="meme-container">
+            <img src='https://randommeme-five.vercel.app/' style="height: 400px; display: block; margin: 0 auto;" alt="Random Dev Meme">
+        </div>
+    </section>
 
-
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particle.js"></script>
 </body>
 </html>

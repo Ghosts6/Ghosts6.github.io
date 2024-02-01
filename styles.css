@@ -1,9 +1,65 @@
 body {
-    background: linear-gradient(135deg, #a6e3ff, #85d3c8);
-    color: #000;
+    margin: 0;
+    animation: movingColor 10s infinite;
+    background: linear-gradient(45deg, #a6e3ff, #85d3c8, #c7b3ff);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color: white;
     padding: 20px;
     font-family: 'Arial', sans-serif;
 }
+
+@keyframes movingColor {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#scrollable-content, section {
+    background: transparent;
+    background-color: #2e4053  ;
+    border: 5px double #1ad50d;
+    padding: 20px;
+    margin: 0px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+#scrollable-content {
+    text-align: left;
+}
+
+section ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section li {
+    margin-bottom: 10px;
+    flex-basis: 48%;
+}
+
 
 h1 {
     font-size: 24px;
@@ -30,4 +86,26 @@ ul {
 
 li {
     margin-bottom: 10px;
+    flex-basis: 48%;
+}
+
+.logo {
+    left: 20px;
+    width: 60px;
+    height: auto; 
+}
+
+#github-trophies {
+    background: transparent;
+    background-color:   #2e4053;
+    border: 5px double #1ad50d;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.trophy-container {
+    max-width: 100%;
+    overflow-x: auto; 
 }
