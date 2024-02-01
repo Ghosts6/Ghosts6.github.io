@@ -27,7 +27,7 @@ About Me<br>Hey there! 👋 I'm Kiarash, a passionate 19yearsold studying Comput
 ---
 [![](https://visitcount.itsvg.in/api?id=Ghosts6&icon=2&color=8)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+
 
 ###
 
