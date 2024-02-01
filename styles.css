@@ -109,3 +109,15 @@ li {
     max-width: 100%;
     overflow-x: auto; 
 }
+
+@media screen and (max-width: 600px) {
+    section ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section li,
+    li {
+        flex-basis: 100%;
+    }
+}
