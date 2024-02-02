@@ -8,7 +8,6 @@ body {
     padding: 20px;
     font-family: 'Arial', sans-serif;
 }
-
 @keyframes movingColor {
     0% {
         background-position: 0% 50%;
