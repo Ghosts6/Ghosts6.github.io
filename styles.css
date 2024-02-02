@@ -109,7 +109,6 @@ li {
     max-width: 100%;
     overflow-x: auto; 
 }
-
 @media screen and (max-width: 600px) {
     #scrollable-content,
     section,
@@ -120,7 +119,7 @@ li {
     }
 
     #scrollable-content {
-        width: 95%; 
+        width: 100%;
     }
 
     section h1,
@@ -142,17 +141,15 @@ li {
 
     .stats-container,
     .trophy-container,
-    .meme-container {
-        max-width: 100%;
-        overflow-x: auto;
-    }
-
+    .meme-container,
     #github-stats {
-        width: 95%; 
+        max-width: 95%; 
+        margin: 0 auto; 
     }
 
     #github-stats img {
         width: 100%; 
+        max-width: 100%; 
     }
 
     #dev-meme img {
@@ -160,3 +157,4 @@ li {
         width: 100%; 
     }
 }
+
