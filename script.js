@@ -15,3 +15,23 @@ particlesJS("particles-js", {
   },
   retina_detect: true,
 });
+
+function toggleDarkMode() {
+  const body = document.body;
+  const darkModeIcon = document.getElementById('dark-mode-icon');
+
+  body.classList.toggle('dark-mode');
+
+  darkModeIcon.classList.toggle('fa-moon');
+  darkModeIcon.classList.toggle('fa-sun');
+
+  if (body.classList.contains('dark-mode')) {
+
+    body.style.background = 'linear-gradient(45deg, #2c3e50, #34495e, #5d6d7e)';
+    body.style.color = '#ffffff';
+  } else {
+
+    body.style.background = 'linear-gradient(45deg, #a6e3ff, #85d3c8, #c7b3ff)';
+    body.style.color = 'white';
+  }
+}
