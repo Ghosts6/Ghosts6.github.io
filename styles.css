@@ -143,12 +143,14 @@ li {
     .trophy-container,
     .meme-container,
     #github-stats {
-        max-width: 95%; 
+        max-width: 100%;
+        height: auto;
         margin: 0 auto; 
     }
 
     #github-stats img {
-        width: 100%; 
+        width: 100%;
+        height: auto;
         max-width: 100%; 
     }
 
