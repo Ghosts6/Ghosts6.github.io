@@ -110,16 +110,6 @@ li {
     overflow-x: auto; 
 }
 
-@media screen and (max-width: 600px) {
-    section ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    section li,
-    li {
-        flex-basis: 100%;
-    }
 }
 @media screen and (max-width: 600px) {
     #scrollable-content, section, #github-stats, #github-trophies, #dev-meme {
