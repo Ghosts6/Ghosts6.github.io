@@ -121,3 +121,40 @@ li {
         flex-basis: 100%;
     }
 }
+@media screen and (max-width: 600px) {
+    #scrollable-content, section, #github-stats, #github-trophies, #dev-meme {
+        padding: 10px; 
+        margin: 0; 
+    }
+
+    #scrollable-content h1,
+    section h2,
+    section ul,
+    section p {
+        font-size: 16px; 
+    }
+
+    section ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section li,
+    li {
+        flex-basis: 100%;
+    }
+
+    .stats-container,
+    .trophy-container,
+    .meme-container {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    #dev-meme img {
+        height: auto;
+        width: 100%; 
+    }
+}
+
+
