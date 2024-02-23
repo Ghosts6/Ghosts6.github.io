@@ -1,0 +1,287 @@
+body {
+    margin: 0;
+    animation: movingColor 10s infinite;
+    background: linear-gradient(45deg, #a6e3ff, #85d3c8, #c7b3ff);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color: white;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+@keyframes movingColor {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#scrollable-content, section {
+    background: transparent;
+    background-color: #2e4053  ;
+    border: 5px double #1ad50d;
+    padding: 20px;
+    margin: 0px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+#scrollable-content {
+    text-align: left;
+}
+
+section ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section li {
+    margin-bottom: 10px;
+    flex-basis: 48%;
+}
+
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    text-align: left;
+}
+
+section {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    flex-basis: 48%;
+}
+
+.logo {
+    left: 20px;
+    width: 60px;
+    height: auto; 
+}
+
+#github-trophies {
+    background: transparent;
+    background-color:   #414c4c;
+    border: 5px double #1ad50d;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.trophy-container {
+    max-width: 100%;
+    overflow-x: auto; 
+}
+
+.project-button {
+    margin-top: 50px;
+    left: 0%;
+    top: 60%;
+    position: relative;
+    transform: translate(-0%, -50%);
+    border: 2px solid #1ad50d;
+    border-radius: 30px;
+    padding: 10px 30px;
+    background-color: transparent;
+    background: linear-gradient(
+        to right, rgba(0, 168, 253), #fff 35%, #e00a95
+    );
+    background-size: 200% auto;
+    transition: ease-out 0.3s;
+    animation: gradient 3s linear infinite;
+}
+
+.project-button:hover{
+    border: 2px solid #0be9f0;
+    background: linear-gradient(
+        to right, cyan, pink 35%, purple 
+    );
+    background-size: 200% auto;
+    transition: ease-out 0.3s;
+    animation: gradient 3s linear infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 75%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 70%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  #scrollable-content,
+  section,
+  #github-trophies {
+    padding: 15px;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  #scrollable-content {
+    width: 95%;
+  }
+
+  section h1,
+  section h2,
+  section ul,
+  section p,
+  #github-trophies,
+  #dev-meme,
+  #github-stats {
+    font-size: 16px;
+  }
+
+  section ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section li,
+  li {
+    flex-basis: 100%;
+  }
+
+  .stats-container,
+  .trophy-container,
+  .meme-container,
+  #github-stats {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  #github-link {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #github-stats img {
+    width: 100%;
+    height: auto;
+  }
+
+  #dev-meme img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  #scrollable-content,
+  section,
+  #github-trophies {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
+  section h1,
+  section h2,
+  section ul,
+  section p,
+  #github-trophies,
+  #dev-meme,
+  #github-stats {
+    font-size: 18px;
+  }
+
+  section li,
+  li {
+    flex-basis: 48%;
+  }
+
+  #github-link {
+    top: 20px;
+    left: 20px;
+  }
+}
+
+#dark-mode-toggle,
+#github-link {
+  position: absolute;
+  z-index: 999;
+}
+
+#dark-mode-toggle {
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+#dark-mode-icon {
+  font-size: 42px;
+  color: #ffffff;
+}
+
+.dark-mode body {
+  background: linear-gradient(45deg, #2c3e50, #34495e, #5d6d7e);
+  color: #ffffff;
+}
+
+.dark-mode #scrollable-content,
+.dark-mode section,
+.dark-mode #github-trophies {
+  background-color: #34495e;
+  border: 5px double #0be9f0;
+}
+
+#github-link {
+  top: 20px;
+  left: 48%;
+  cursor: pointer;
+}
+
+#github-link i {
+  font-size: 42px;
+  color: #ffffff; 
+}
