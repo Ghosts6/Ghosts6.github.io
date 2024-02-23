@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    animation: movingColor 10s infinite;
+    background: linear-gradient(45deg, #a6e3ff, #85d3c8, #c7b3ff);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color: white;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+@keyframes movingColor {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#projects-content, section{
+    background: transparent;
+    background-color: #2e4053  ;
+    border: 5px double #1ad50d;
+    padding: 20px;
+    margin: 0px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.projects-content {
+    text-align: left;
+}
+
+.projects-video{
+  border: 2px solid #1ad50d;
+}
+
+.img-section{
+  width: 600px;
+  height: 400px;
+  border: 2px solid #1ad50d;
+}
+
+section a{
+  font-size: 32px;
+  font-weight: bolder;
+  text-align: center;
+  color: black;
+}
+
+section a:hover{
+  color: darkblue;
+}
+
+section ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section li {
+    margin-bottom: 10px;
+    flex-basis: 48%;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  text-align: left;
+}
+
+section {
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  flex-basis: 48%;
+}
+
+.logo {
+  left: 20px;
+  width: 60px;
+  height: auto; 
+}
+
+#dark-mode-toggle,
+#github-link {
+  position: absolute;
+  z-index: 999;
+}
+
+#dark-mode-toggle {
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+#dark-mode-icon {
+  font-size: 42px;
+  color: #ffffff;
+}
+
+.dark-mode body {
+  background: linear-gradient(45deg, #2c3e50, #34495e, #5d6d7e);
+  color: #ffffff;
+}
+
+.dark-mode #projects-content, 
+.dark-mode section {
+  background-color: #34495e;
+  border: 5px double #0be9f0;
+}
+
+.dark-mode .projects-video {
+  border: 2px solid #0be9f0;
+}
+
+.dark-mode .img-section {
+  border: 2px solid #0be9f0;  
+}
+
+#github-link {
+  top: 20px;
+  left: 48%;
+  cursor: pointer;
+}
+
+#github-link i {
+  font-size: 42px;
+  color: #ffffff; 
+}
+
+.home-button {
+  margin-top: 50px;
+  left: 0%;
+  top: 60%;
+  position: relative;
+  transform: translate(-0%, -50%);
+  border: 2px solid #1ad50d;
+  border-radius: 30px;
+  padding: 10px 30px;
+  background-color: transparent;
+  background: linear-gradient(
+      to right, rgba(0, 168, 253), #fff 35%, #e00a95
+  );
+  background-size: 200% auto;
+  transition: ease-out 0.3s;
+  animation: gradient 3s linear infinite;
+}
+
+.home-button:hover{
+  border: 2px solid #0be9f0;
+  background: linear-gradient(
+      to right, cyan, pink 35%, purple 
+  );
+  background-size: 200% auto;
+  transition: ease-out 0.3s;
+  animation: gradient 3s linear infinite;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 75%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 70%;
+  }
+}
