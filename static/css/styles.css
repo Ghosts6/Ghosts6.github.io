@@ -210,6 +210,12 @@ li {
     width: 100%;
     height: auto;
   }
+
+
+.top-repo{
+    width: 100%;
+    height: auto;
+    }
 }
 
 @media screen and (min-width: 600px) {
@@ -244,6 +250,11 @@ li {
     top: 20px;
     left: 20px;
   }
+    
+.top-repo{
+    width: 100%;
+    height: auto;
+    }
 }
 
 #dark-mode-toggle,
