@@ -164,6 +164,7 @@ li {
 }
 
 .home-button {
+  cursor: pointer;
   margin-top: 50px;
   left: 0%;
   top: 60%;
