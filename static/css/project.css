@@ -243,6 +243,13 @@ li {
   }
 }
 
+section a {
+  font-size: 3vw; 
+  font-weight: bolder;
+  text-align: center;
+  color: black;
+}
+
 @media screen and (min-width: 600px) {
   body {
       padding: 20px;
@@ -267,5 +274,8 @@ li {
   section ul,
   section p {
       font-size: 18px;
+  }
+  section a {
+    font-size: 4vw; 
   }
 }
