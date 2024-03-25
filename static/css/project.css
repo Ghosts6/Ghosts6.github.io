@@ -41,6 +41,7 @@ section {
   margin: 0px auto;
   max-width: 800px;
   text-align: center;
+  overflow: hidden;
 }
 
 .projects-content {
@@ -243,12 +244,18 @@ li {
   }
 }
 
-section a {
+  section a {
   font-size: 3vw; 
   font-weight: bolder;
   text-align: center;
   color: black;
+  width: 100%; 
+  padding: 5px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
 }
+
 
 @media screen and (min-width: 600px) {
   body {
