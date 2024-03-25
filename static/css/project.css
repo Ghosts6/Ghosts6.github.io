@@ -245,7 +245,7 @@ li {
 }
 
   section a {
-  font-size: 2vw; 
+  font-size: 24px; 
   font-weight: bolder;
   text-align: center;
   color: black;
@@ -280,16 +280,39 @@ li {
   section h2,
   section ul,
   section p {
-      font-size: 18px;
+      font-size: 14px;
   }
   section a {
-    font-size: 6vw; 
+    font-size: 20px; 
   }
 }
 
 @media screen and (max-width: 1200px) {
+  body {
+      padding: 20px;
+  }
+
+  .projects-video,
+  .img-section {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  #projects-content,
+  section {
+      padding: 20px;
+      margin: 0 auto;
+      max-width: 800px;
+  }
+
+  section h1,
+  section h2,
+  section ul,
+  section p {
+      font-size: 14px;
+  }
   section a {
-    font-size: 4vw; 
+    font-size: 20px; 
   }
 }
-
