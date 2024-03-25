@@ -245,7 +245,7 @@ li {
 }
 
   section a {
-  font-size: 3vw; 
+  font-size: 2vw; 
   font-weight: bolder;
   text-align: center;
   color: black;
@@ -283,6 +283,13 @@ li {
       font-size: 18px;
   }
   section a {
+    font-size: 6vw; 
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  section a {
     font-size: 4vw; 
   }
 }
+
