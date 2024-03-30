@@ -236,9 +236,7 @@ li {
   section h2,
   section ul,
   section p,
-  #github-trophies,
-  #dev-meme,
-  #github-stats {
+  #github-trophies {
     font-size: 18px;
   }
 
@@ -251,11 +249,13 @@ li {
     top: 20px;
     left: 20px;
   }
-    
+
   .top-repo {
     width: 100%;
     height: auto;
   }
+}
+
 #dark-mode-toggle,
 #github-link {
   position: absolute;
