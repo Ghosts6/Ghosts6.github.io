@@ -219,7 +219,7 @@ li {
     }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   body {
     padding: 20px;
   }
@@ -252,48 +252,8 @@ li {
     left: 20px;
   }
     
-.top-repo{
+  .top-repo {
     width: 100%;
     height: auto;
-    }
-}
-
-#dark-mode-toggle,
-#github-link {
-  position: absolute;
-  z-index: 999;
-}
-
-#dark-mode-toggle {
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
-}
-
-#dark-mode-icon {
-  font-size: 42px;
-  color: #ffffff;
-}
-
-.dark-mode body {
-  background: linear-gradient(45deg, #2c3e50, #34495e, #5d6d7e);
-  color: #ffffff;
-}
-
-.dark-mode #scrollable-content,
-.dark-mode section,
-.dark-mode #github-trophies {
-  background-color: #34495e;
-  border: 5px double #0be9f0;
-}
-
-#github-link {
-  top: 20px;
-  left: 48%;
-  cursor: pointer;
-}
-
-#github-link i {
-  font-size: 42px;
-  color: #ffffff; 
+  }
 }
