@@ -32,7 +32,7 @@ body {
     z-index: -1;
 }
 
-#scrollable-content, section {
+section {
     background: transparent;
     background-color: #2e4053  ;
     border: 5px double #1ad50d;
@@ -43,31 +43,143 @@ body {
 }
 
 #scrollable-content {
-    text-align: left;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+    background-color: #2e4053;
+    border: 5px double #1ad50d;
+    border-radius: 10px; 
 }
 
-section ul {
-    padding: 0;
-    list-style: none;
+#socials ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-section li {
-    margin-bottom: 10px;
-    flex-basis: 48%;
+#socials li {
+    margin: 10px 0;
+    flex: 1 1 48%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    box-sizing: border-box;
 }
 
+#socials li i {
+    margin-right: 10px;
+    font-size: 24px;
+    transition: color 0.3s ease-in-out;
+}
+
+#socials li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+#socials li a:hover {
+    text-decoration: underline;
+}
+
+#socials li:nth-child(1) i,
+#socials li:nth-child(1) a:hover {
+    color: #7289da; 
+}
+
+#socials li:nth-child(2) i,
+#socials li:nth-child(2) a:hover {
+    color: #e4405f; 
+}
+
+#socials li:nth-child(3) i,
+#socials li:nth-child(3) a:hover {
+    color: #0077b5; 
+}
+
+#socials li:nth-child(4) i,
+#socials li:nth-child(4) a:hover {
+    color: #f48024; 
+}
+
+#socials li:nth-child(5) i,
+#socials li:nth-child(5) a:hover {
+    color: #9146ff; 
+}
+
+#socials li:nth-child(6) i,
+#socials li:nth-child(6) a:hover {
+    color: #ff0000; 
+}
+
+#tech-stack ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+#tech-stack li {
+  cursor: pointer;
+    margin: 10px 0; 
+    flex: 1 1 48%; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    box-sizing: border-box; 
+}
+
+#tech-stack li i {
+    margin-right: 10px;
+    font-size: 24px;
+    transition: color 0.3s ease-in-out;
+}
+
+#tech-stack li:hover {
+    color: #00ffff; 
+    text-decoration: underline; 
+}
+
+#tech-stack li:hover i {
+    color: #0be9f0; 
+    text-decoration: none; 
+}
+
+h1, h2, h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #f5f5f5;
+    text-align: center;
+    font-weight: lighter;
+}
 
 h1 {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
+    color: #00ffff;
+    margin-bottom: 20px; 
+}
+
+h3 {
+    font-size: 26px;
+    color: #000000;
+    margin-bottom: 15px;
 }
 
 p {
-    font-size: 16px;
+    font-size: 18px;
     text-align: left;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 section {
@@ -130,6 +242,7 @@ li {
 }
 
 .project-button:hover{
+    text-decoration: underline;
     border: 2px solid #0be9f0;
     background: linear-gradient(
         to right, cyan, pink 35%, purple 
@@ -155,6 +268,10 @@ li {
 @media screen and (max-width: 600px) {
   body {
     padding: 10px;
+  }
+
+  #tech-stack li {
+        flex-basis: 100%;
   }
 
   #scrollable-content,
@@ -262,10 +379,40 @@ li {
   z-index: 999;
 }
 
+.icons a, .icons img, .icons i {
+    transition: transform 0.3s ease;
+}
+
+.icons a:hover, .icons img:hover, .icons i:hover {
+    transform: scale(1.2);
+}
+
+.icons img.logo:hover {
+    transform: scale(1.2);
+}
+
+.icons #github-link i:hover {
+    transform: scale(1.2);
+}
+
 #dark-mode-toggle {
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    color: inherit;
+}
+
+#dark-mode-toggle:focus {
+    outline: none; 
+}
+
+#dark-mode-icon {
+    transition: color 0.3s; 
 }
 
 #dark-mode-icon {
@@ -294,5 +441,5 @@ li {
 #github-link i {
   font-size: 42px;
   color: #ffffff; 
-  }
 }
+

@@ -16,22 +16,32 @@ particlesJS("particles-js", {
     retina_detect: true,
   });
   
-  function toggleDarkMode() {
+function applyDarkMode(isDarkMode) {
     const body = document.body;
     const darkModeIcon = document.getElementById('dark-mode-icon');
-  
-    body.classList.toggle('dark-mode');
-  
-    darkModeIcon.classList.toggle('fa-moon');
-    darkModeIcon.classList.toggle('fa-sun');
-  
-    if (body.classList.contains('dark-mode')) {
-  
-      body.style.background = 'linear-gradient(45deg, #2c3e50, #34495e, #5d6d7e)';
-      body.style.color = '#ffffff';
+
+    if (isDarkMode) {
+        body.classList.add('dark-mode');
+        darkModeIcon.classList.add('fa-sun');
+        darkModeIcon.classList.remove('fa-moon');
+        body.style.background = 'linear-gradient(45deg, #2c3e50, #34495e, #5d6d7e)';
+        body.style.color = '#ffffff';
     } else {
-  
-      body.style.background = 'linear-gradient(45deg, #a6e3ff, #85d3c8, #c7b3ff)';
-      body.style.color = 'white';
+        body.classList.remove('dark-mode');
+        darkModeIcon.classList.add('fa-moon');
+        darkModeIcon.classList.remove('fa-sun');
+        body.style.background = 'linear-gradient(45deg, #a6e3ff, #85d3c8, #c7b3ff)';
+        body.style.color = 'white';
     }
-  }
+}
+
+function toggleDarkMode() {
+    const isDarkMode = !document.body.classList.contains('dark-mode');
+    applyDarkMode(isDarkMode);
+    localStorage.setItem('darkMode', isDarkMode);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+    applyDarkMode(savedDarkMode);
+});

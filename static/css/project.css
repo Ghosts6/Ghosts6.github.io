@@ -123,10 +123,40 @@ li {
   z-index: 999;
 }
 
+.icons a, .icons img, .icons i {
+    transition: transform 0.3s ease;
+}
+
+.icons a:hover, .icons img:hover, .icons i:hover {
+    transform: scale(1.2);
+}
+
+.icons img.logo:hover {
+    transform: scale(1.2);
+}
+
+.icons #github-link i:hover {
+    transform: scale(1.2);
+}
+
 #dark-mode-toggle {
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    color: inherit;
+}
+
+#dark-mode-toggle:focus {
+    outline: none; 
+}
+
+#dark-mode-icon {
+    transition: color 0.3s; 
 }
 
 #dark-mode-icon {
