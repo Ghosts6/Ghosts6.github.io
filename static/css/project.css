@@ -1,12 +1,45 @@
 body {
-  margin: 0;
-  animation: movingColor 10s infinite;
-  background: linear-gradient(45deg, #a6e3ff, #85d3c8, #c7b3ff);
-  background-size: 100% 100%;
-  background-attachment: fixed;
-  color: white;
-  padding: 20px;
-  font-family: 'Arial', sans-serif;
+    margin: 0;
+    animation: movingColor 10s infinite;
+    background: linear-gradient(45deg, #a6e3ff, #85d3c8, #c7b3ff);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color: white;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-bg);
+}
+
+:root {
+    --scrollbar-bg: #2e4053;
+    --scrollbar-thumb: #1ad50d;
+    --scrollbar-thumb-hover: #0be9f0;
+}
+
+.dark-mode {
+    --scrollbar-bg: #34495e;
+    --scrollbar-thumb: #0be9f0;
+    --scrollbar-thumb-hover: #1ad50d;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--scrollbar-bg);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb);
+    border-radius: 10px;
+    border: 3px solid var(--scrollbar-bg);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-thumb-hover);
 }
 
 @keyframes movingColor {
