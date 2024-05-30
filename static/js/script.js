@@ -45,3 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedDarkMode = localStorage.getItem('darkMode') === 'true';
     applyDarkMode(savedDarkMode);
 });
+
+window.addEventListener('load', function() {
+    document.body.classList.add('loaded');
+});
