@@ -1,5 +1,5 @@
 .loader {
-  --w:10ch;
+  --w: 10ch;
   font-weight: bold;
   font-family: monospace;
   font-size: 30px;
@@ -7,23 +7,25 @@
   width: var(--w);
   overflow: hidden;
   white-space: nowrap;
-  text-shadow: 
-    calc(-1*var(--w)) 0, 
-    calc(-2*var(--w)) 0, 
-    calc(-3*var(--w)) 0, 
-    calc(-4*var(--w)) 0,
-    calc(-5*var(--w)) 0, 
-    calc(-6*var(--w)) 0, 
-    calc(-7*var(--w)) 0, 
-    calc(-8*var(--w)) 0, 
-    calc(-9*var(--w)) 0;
+  text-shadow: calc(-1*var(--w)) 0, calc(-2*var(--w)) 0, calc(-3*var(--w)) 0, calc(-4*var(--w)) 0, calc(-5*var(--w)) 0, calc(-6*var(--w)) 0, calc(-7*var(--w)) 0, calc(-8*var(--w)) 0, calc(-9*var(--w)) 0;
   animation: l16 2s infinite;
   position: fixed;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9999;
   visibility: visible;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  gap: 25px;
+}
+
+.loader img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: auto;
 }
 
 .loader:before {
@@ -336,37 +338,46 @@ li {
   top: 60%;
   position: relative;
   transform: translate(-0%, -50%);
-  border: 2px solid #1ad50d;
-  border-radius: 30px;
-  padding: 10px 30px;
-  background-color: transparent;
-  background: linear-gradient(
-      to right, rgba(0, 168, 253), #fff 35%, #e00a95
-  );
+  border: 1px solid #1ad50d;
+  border-radius: 10px;
+  padding: 12px 36px;
+  background: linear-gradient(90deg, rgba(0, 168, 253, 1) 0%, rgba(255, 255, 255, 1) 35%, rgba(224, 10, 149, 1) 100%);
   background-size: 200% auto;
-  transition: ease-out 0.3s;
+  color: #111;
+  font-size: 16px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  transition: background 0.3s ease-out, border-color 0.3s ease-out, transform 0.3s ease-out;
   animation: gradient 3s linear infinite;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .home-button:hover {
-  border: 2px solid #0be9f0;
-  background: linear-gradient(
-      to right, cyan, pink 35%, purple
-  );
+  text-decoration: none;
+  border-color: #0be9f0;
+  background: linear-gradient(90deg, rgba(0, 255, 255, 1) 0%, rgba(255, 192, 203, 1) 35%, rgba(128, 0, 128, 1) 100%);
   background-size: 200% auto;
-  transition: ease-out 0.3s;
-  animation: gradient 3s linear infinite;
+  transform: translate(-0%, -50%) scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.home-button:active {
+  border-color: #ff69b4;
+  background: linear-gradient(90deg, rgba(0, 150, 150, 1) 0%, rgba(255, 105, 180, 1) 35%, rgba(75, 0, 130, 1) 100%);
+  background-size: 200% auto;
+  transform: translate(-0%, -50%) scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes gradient {
   0% {
-      background-position: 0% 75%;
+      background-position: 0% 50%;
   }
   50% {
       background-position: 100% 50%;
   }
   100% {
-      background-position: 0% 70%;
+      background-position: 0% 50%;
   }
 }
 
@@ -452,6 +463,11 @@ li {
   }
 }
 
+.home-button {
+  font-size: 14px; 
+  padding: 10px 30px;
+}
+
 @media screen and (max-width: 1200px) {
   body {
       padding: 20px;
@@ -480,4 +496,9 @@ li {
   section a {
     font-size: 20px; 
   }
+}
+
+.home-button {
+  font-size: 18px; 
+  padding: 14px 32px;
 }

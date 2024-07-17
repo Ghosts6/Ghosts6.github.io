@@ -263,41 +263,122 @@ li {
     top: 60%;
     position: relative;
     transform: translate(-0%, -50%);
-    border: 2px solid #1ad50d;
-    border-radius: 30px;
-    padding: 10px 30px;
-    background-color: transparent;
-    background: linear-gradient(
-        to right, rgba(0, 168, 253), #fff 35%, #e00a95
-    );
+    border: 1px solid #1ad50d;
+    border-radius: 10px;
+    padding: 12px 36px;
+    background: linear-gradient(90deg, rgba(0, 168, 253, 1) 0%, rgba(255, 255, 255, 1) 35%, rgba(224, 10, 149, 1) 100%);
     background-size: 200% auto;
-    transition: ease-out 0.3s;
+    color: #111;
+    font-size: 16px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    transition: background 0.3s ease-out, border-color 0.3s ease-out, transform 0.3s ease-out;
     animation: gradient 3s linear infinite;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.project-button:hover{
-    text-decoration: underline;
-    border: 2px solid #0be9f0;
-    background: linear-gradient(
-        to right, cyan, pink 35%, purple 
-    );
+.project-button:hover {
+    text-decoration: none;
+    border-color: #0be9f0;
+    background: linear-gradient(90deg, rgba(0, 255, 255, 1) 0%, rgba(255, 192, 203, 1) 35%, rgba(128, 0, 128, 1) 100%);
     background-size: 200% auto;
-    transition: ease-out 0.3s;
-    animation: gradient 3s linear infinite;
+    transform: translate(-0%, -50%) scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.project-button:active {
+    border-color: #ff69b4;
+    background: linear-gradient(90deg, rgba(0, 150, 150, 1) 0%, rgba(255, 105, 180, 1) 35%, rgba(75, 0, 130, 1) 100%);
+    background-size: 200% auto;
+    transform: translate(-0%, -50%) scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes gradient {
     0% {
-        background-position: 0% 75%;
+        background-position: 0% 50%;
     }
     50% {
         background-position: 100% 50%;
     }
     100% {
-        background-position: 0% 70%;
+        background-position: 0% 50%;
     }
+  }
+
+.leet-code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
+.leet-code img.leet-img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.leet-code h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    color: #00ffff;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+.leet-btn {
+    cursor: pointer;
+    height: 45px;
+    line-height: 45px;
+    width: 200px; 
+    display: inline-block;
+    color: #ffffff;  
+    text-decoration: none;
+    font-family: 'Tahoma', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    padding: 0;
+    border: 2px solid #17C3B2; 
+    border-radius: 10px;
+    background-color: #17C3B2;  
+    transition: .3s;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.leet-btn:before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;  
+    transition: .5s ease;
+    z-index: -1;
+}
+
+.leet-btn:hover:before {
+    width: 105%;
+}
+
+.leet-btn:hover {
+    color: #111111;  
+    background-color: #0B5563;  
+}
 
 @media screen and (max-width: 600px) {
   body {
@@ -368,6 +449,16 @@ li {
     width: 100%;
     height: auto;
     }
+}
+
+.project-button {
+    font-size: 14px; 
+    padding: 10px 30px;  
+}
+
+.leet-btn {
+    width: 160px; 
+    font-size: 14px;  
 }
 
 @media screen and (min-width: 600px) and (max-width: 1200px) {
@@ -477,3 +568,12 @@ li {
   color: #ffffff; 
 }
 
+.project-button {
+    font-size: 18px; 
+    padding: 14px 32px;
+}
+
+.leet-btn {
+    width: 180px; 
+    font-size: 16px;
+}
