@@ -77,10 +77,13 @@
 
 body {
     visibility: hidden;
+    overflow: hidden;
 }
 
 body.loaded {
     visibility: visible;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 body.loaded .loader {
