@@ -188,6 +188,7 @@ section {
   text-align: left;
 }
 
+.projects-iframe,
 .projects-video {
   border: 2px solid #1ad50d;
 }
@@ -314,7 +315,7 @@ li {
   background-color: #34495e;
   border: 5px double #0be9f0;
 }
-
+.dark-mode .projects-iframe,
 .dark-mode .projects-video {
   border: 2px solid #0be9f0;
 }
@@ -389,6 +390,7 @@ li {
       padding: 10px;
   }
 
+  .projects-iframe,
   .projects-video,
   .img-section {
     width: 100%;
@@ -441,6 +443,7 @@ li {
       padding: 20px;
   }
 
+  .projects-iframe,
   .projects-video,
   .img-section {
     max-width: 100%;
