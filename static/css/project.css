@@ -453,7 +453,7 @@ li {
     height: auto;
   }
 
-    .projects-iframe{
+  .projects-iframe{
     width: 100%;
     max-height: 30vh;
   }
@@ -493,6 +493,10 @@ li {
     height: auto;
   }
 
+  .projects-iframe{
+    width: 100%;
+    max-height: 50vh;
+  }
 
   #projects-content,
   section {
