@@ -163,7 +163,7 @@ section {
 }
 
 #tech-stack li {
-  cursor: pointer;
+    cursor: pointer;
     margin: 10px 0; 
     flex: 1 1 48%; 
     display: flex;
@@ -172,10 +172,15 @@ section {
     box-sizing: border-box; 
 }
 
-#tech-stack li i {
+#tech-stack li img.tech-icon {
     margin-right: 10px;
-    font-size: 24px;
-    transition: color 0.3s ease-in-out;
+    width: 48px;  
+    height: 48px; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+#tech-stack li:hover img.tech-icon {
+    transform: scale(1.1);
 }
 
 #tech-stack li:hover {
@@ -183,9 +188,32 @@ section {
     text-decoration: underline; 
 }
 
-#tech-stack li:hover i {
-    color: #0be9f0; 
-    text-decoration: none; 
+#scrollToTopButton {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    background-color: #17C3B2; 
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+#scrollToTopButton i {
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+#scrollToTopButton:hover {
+    background-color: #00ffff; 
+    color: #ffffff;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
 }
 
 h1, h2, h3 {
@@ -259,40 +287,31 @@ li {
 .project-button {
     cursor: pointer;
     margin-top: 50px;
-    left: 0%;
-    top: 60%;
     position: relative;
-    transform: translate(-0%, -50%);
-    border: 1px solid #1ad50d;
-    border-radius: 10px;
-    padding: 12px 36px;
-    background: linear-gradient(90deg, rgba(0, 168, 253, 1) 0%, rgba(255, 255, 255, 1) 35%, rgba(224, 10, 149, 1) 100%);
-    background-size: 200% auto;
-    color: #111;
-    font-size: 16px;
-    font-weight: lighter;
+    border: none; 
+    border-radius: 50px; 
+    padding: 14px 40px; 
+    background: linear-gradient(135deg, #00a8fd 0%, #ff69b4 100%); 
+    color: white; 
+    font-size: 18px; 
+    font-weight: bold; 
     text-transform: uppercase;
-    transition: background 0.3s ease-out, border-color 0.3s ease-out, transform 0.3s ease-out;
-    animation: gradient 3s linear infinite;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .project-button:hover {
-    text-decoration: none;
-    border-color: #0be9f0;
-    background: linear-gradient(90deg, rgba(0, 255, 255, 1) 0%, rgba(255, 192, 203, 1) 35%, rgba(128, 0, 128, 1) 100%);
-    background-size: 200% auto;
-    transform: translate(-0%, -50%) scale(1.05);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #00ffff 0%, #ff00ff 100%); 
+    transform: translateY(-3px); 
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25); 
 }
 
 .project-button:active {
-    border-color: #ff69b4;
-    background: linear-gradient(90deg, rgba(0, 150, 150, 1) 0%, rgba(255, 105, 180, 1) 35%, rgba(75, 0, 130, 1) 100%);
-    background-size: 200% auto;
-    transform: translate(-0%, -50%) scale(0.95);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px); 
+    background: linear-gradient(135deg, #008080 0%, #ff1493 100%); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
+
 
 @keyframes gradient {
     0% {
@@ -555,6 +574,17 @@ li {
 .dark-mode #github-trophies {
   background-color: #34495e;
   border: 5px double #0be9f0;
+}
+
+body.dark-mode #scrollToTopButton {
+    background-color: #0B5563; 
+    color: #ffffff;
+}
+
+body.dark-mode #scrollToTopButton:hover {
+    background-color: #008080; 
+    color: #ffffff;
+    box-shadow: 0 12px 20px rgba(255, 255, 255, 0.3);
 }
 
 #github-link {

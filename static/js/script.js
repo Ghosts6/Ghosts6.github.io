@@ -92,4 +92,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     displayRandomMeme();
+
+    const scrollToTopButton = document.getElementById('scrollToTopButton');
+    window.addEventListener('scroll', () => {
+        scrollToTopButton.style.display = window.scrollY > 100 ? 'block' : 'none';
+    });
+    scrollToTopButton.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    
 });
