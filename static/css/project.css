@@ -482,6 +482,9 @@ body.dark-mode #scrollToTopButton:hover {
   justify-content: center; 
 }
 
+.redirect {
+  cursor: pointer;
+}
 
 @media screen and (min-width: 600px) {
   body {
