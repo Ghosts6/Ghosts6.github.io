@@ -263,10 +263,16 @@ li {
     flex-basis: 48%;
 }
 
+.logo-link {
+    display: table-row;
+    padding: 10px; 
+}
+
 .logo {
     left: 20px;
     width: 60px;
-    height: auto; 
+    height: auto;
+    pointer-events: none; 
 }
 
 #github-trophies {
@@ -529,14 +535,7 @@ li {
 
 .icons a:hover, .icons img:hover, .icons i:hover {
     transform: scale(1.2);
-}
-
-.icons img.logo:hover {
-    transform: scale(1.2);
-}
-
-.icons #github-link i:hover {
-    transform: scale(1.2);
+    transition: transform 0.3s ease;
 }
 
 #dark-mode-toggle {
@@ -562,6 +561,7 @@ li {
 #dark-mode-icon {
   font-size: 42px;
   color: #ffffff;
+  transition: transform 0.3s ease;
 }
 
 .dark-mode body {
