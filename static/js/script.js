@@ -41,9 +41,10 @@ function applyDarkMode(isDarkMode) {
     const body = document.body;
     const darkModeIcon = document.getElementById('dark-mode-icon');
 
-    body.classList.toggle('dark-mode', isDarkMode);
-    darkModeIcon.classList.toggle('fa-sun', isDarkMode);
-    darkModeIcon.classList.toggle('fa-moon', !isDarkMode);
+    body.classList.toggle('dark', isDarkMode); 
+
+    darkModeIcon.classList.toggle('fa-sun', isDarkMode); 
+    darkModeIcon.classList.toggle('fa-moon', !isDarkMode); 
 
     if (isDarkMode) {
         body.style.background = 'linear-gradient(45deg, #2c3e50, #34495e, #5d6d7e)';
@@ -55,16 +56,19 @@ function applyDarkMode(isDarkMode) {
 }
 
 function toggleDarkMode() {
-    const isDarkMode = !document.body.classList.contains('dark-mode');
-    applyDarkMode(isDarkMode);
+    const isDarkMode = !document.body.classList.contains('dark');
+    
+    applyDarkMode(isDarkMode); 
+ 
     localStorage.setItem('darkMode', isDarkMode);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     const savedDarkMode = localStorage.getItem('darkMode') === 'true';
-    applyDarkMode(savedDarkMode);
+    applyDarkMode(savedDarkMode); 
 
     const scrollToTopButton = document.getElementById('scrollToTopButton');
+    
     window.addEventListener('scroll', () => {
         scrollToTopButton.style.display = window.scrollY > 100 ? 'block' : 'none';
     });
