@@ -16,26 +16,28 @@
     <meta name="google-site-verification" content="w358AduLG9pPp2CvYg9fb8D_YgbMMI3dly2AwB_dhA0" />
     <title>Projects</title>
 </head>
-<body class="m-0 p-5 invisible overflow-hidden font-sans text-white bg-gradient-to-br from-[#a6e3ff] via-[#85d3c8] to-[#c7b3ff] bg-fixed animate-movingColor dark:bg-gradient-to-br dark:from-[#2c3e50] dark:via-[#34495e] dark:to-[#5d6d7e]">
+<body class="m-0 p-5 sm:p-4 md:p-6 invisible overflow-hidden font-sans text-white bg-gradient-to-br from-[#a6e3ff] via-[#85d3c8] to-[#c7b3ff] bg-fixed animate-movingColor dark:bg-gradient-to-br dark:from-[#2c3e50] dark:via-[#34495e] dark:to-[#5d6d7e]">
     <div class="loader">
         <img src="static/img/logo.png" alt="Loading...">
     </div>
     <div id="particles-js"></div>
-    <div class="icons transition-all ease-in-out delay-[0.3s]">
-        <button id="dark-mode-toggle" class="absolute z-[999] top-[20px] right-[20px] bg-transparent border-none cursor-pointer p-0 m-0 text-[24px] text-inherit focus:outline-none" onclick="toggleDarkMode()">
-            <i id="dark-mode-icon" class="fas fa-moon text-[42px] text-[#ffffff] transition-all ease-in-out transform hover:scale-[1.2]"></i>
+    <div class="icons w-full h-14 flex items-center justify-between transition-all ease-in-out delay-[0.3s] relative">
+        <a href="https://kiarashbashokian.com" target="_blank" class="logo-link p-[10px] transition-all ease-in-out transform hover:scale-[1.2] sm:p-[12px] md:p-[14px]">
+            <img src="static/img/logo.png" alt="Logo of Kiarash Bashokian" class="logo w-[60px] h-auto pointer-events-none sm:w-[50px] md:w-[70px]">
+        </a>
+        <a href="https://github.com/Ghosts6" target="_blank" id="github-link" class="cursor-pointer sm:left-[40%] md:left-[45%]">
+            <i class="fa-brands fa-github text-[42px] text-[#ffffff] mr-10 transition-all ease-in-out transform hover:scale-[1.2] sm:text-[36px] md:text-[40px]"></i>
+        </a>
+        <button id="dark-mode-toggle" 
+                class="bg-transparent border-none cursor-pointer p-0 m-0 text-[24px] text-inherit focus:outline-none sm:text-[28px] md:text-[32px]" 
+                onclick="toggleDarkMode()">
+            <i id="dark-mode-icon" class="fas fa-moon text-[42px] text-[#ffffff] transition-all ease-in-out transform hover:scale-[1.2] sm:text-[36px] md:text-[40px]"></i>
         </button>
-        <a href="https://kiarashbashokian.com" target="_blank" class="logo-link table-row p-[10px] transition-all ease-in-out transform hover:scale-[1.2]">
-            <img src="static/img/logo.png" alt="Your Logo" class="logo left-[20px] w-[60px] h-auto pointer-events-none">
-        </a>
-        <a href="https://github.com/Ghosts6" target="_blank" id="github-link" class="absolute z-[999] top-[20px] left-[48%] cursor-pointer">
-            <i class="fa-brands fa-github text-[42px] text-[#ffffff] transition-all ease-in-out transform hover:scale-[1.2]"></i>
-        </a>
     </div>
-    <div id="projects-content" class="p-5 m-auto max-w-[800px] text-center bg-sectionBg border-[5px] border-double border-sectionBorder dark:border-sectionBorderDark rounded-lg">
+    <div id="projects-content" class="p-5 sm:p-4 md:p-6 m-auto max-w-[800px] sm:max-w-[600px] md:max-w-[700px] text-center bg-sectionBg border-[5px] border-double border-sectionBorder dark:border-sectionBorderDark rounded-lg">
         <section class="section-style">
-            <a href="https://github.com/Ghosts6/DjangoGameHub" class="flex justify-center items-center p-[5px] w-full text-[20px] font-bold text-center text-black hover:text-[#00008B] underline-offset-2 decoration-transparent hover:underline hover:decoration-[#00008B] transition-colors duration-300">DjangoGameHub :</a>
-            <p class="text-[16px] text-left font-light mb-[15px]">
+            <a href="https://github.com/Ghosts6/DjangoGameHub" class="flex justify-center items-center p-[5px] sm:p-[4px] md:p-[6px] w-full text-[20px] sm:text-[18px] md:text-[22px] font-bold text-center text-black hover:text-[#00008B] underline-offset-2 decoration-transparent hover:underline hover:decoration-[#00008B] transition-colors duration-300">DjangoGameHub :</a>
+            <p class="text-[16px] sm:text-[14px] md:text-[18px] text-left sm:text-center md:text-left font-light mb-[15px] sm:mb-[10px] md:mb-[20px]">
                 This is my source code of web platform that hosting classic games like Snake,
                 Flappy Bird, Tic-Tac-Toe, and Chrome's Dinosaur Game. Powered by Django and PostgreSQL for
                 seamless performance, with HTML, CSS, and JavaScript for a captivating frontend. Track your scores, compete on the leaderboard,
@@ -47,8 +49,8 @@
             </video>
         </section>
         <section class="section-style">
-            <a href="https://github.com/Ghosts6/Local-website" class="flex justify-center items-center p-[5px] w-full text-[20px] font-bold text-center text-black hover:text-[#00008B] underline-offset-2 decoration-transparent hover:underline hover:decoration-[#00008B] transition-colors duration-300">TicketSystem:</a>
-            <p class="text-[16px] text-left font-light mb-[15px]">
+            <a href="https://github.com/Ghosts6/Local-website" class="flex justify-center items-center p-[5px] sm:p-[4px] md:p-[6px] w-full text-[20px] sm:text-[18px] md:text-[22px] font-bold text-center text-black hover:text-[#00008B] underline-offset-2 decoration-transparent hover:underline hover:decoration-[#00008B] transition-colors duration-300">TicketSystem:</a>
+            <p class="text-[16px] sm:text-[14px] md:text-[18px] text-left sm:text-center md:text-left font-light mb-[15px] sm:mb-[10px] md:mb-[20px]">
                 Here is the source code for my web project, a ticket system built with Django, DRF, ORM, and frontend technologies
                 like HTML, CSS, and JavaScript. The system allows clients to create ticket requests for the IT team, who can receive 
                 and respond to them efficiently.
@@ -59,8 +61,8 @@
             </video>
         </section>
         <section class="section-style">
-            <a href="https://github.com/Ghosts6/matrix" class="flex justify-center items-center p-[5px] w-full text-[20px] font-bold text-center text-black hover:text-[#00008B] underline-offset-2 decoration-transparent hover:underline hover:decoration-[#00008B] transition-colors duration-300">Matrix:</a>
-            <P class="text-[16px] text-left font-light mb-[15px]">
+            <a href="https://github.com/Ghosts6/matrix" class="flex justify-center items-center p-[5px] sm:p-[4px] md:p-[6px] w-full text-[20px] sm:text-[18px] md:text-[22px] font-bold text-center text-black hover:text-[#00008B] underline-offset-2 decoration-transparent hover:underline hover:decoration-[#00008B] transition-colors duration-300">Matrix:</a>
+            <P class="text-[16px] sm:text-[14px] md:text-[18px] text-left sm:text-center md:text-left font-light mb-[15px] sm:mb-[10px] md:mb-[20px]">
                 in this section we can check my matrix project that i create matrix animations with language like
                 c++,python,bash,cmd and html/css/js with different features
             </P>
@@ -70,8 +72,8 @@
             </video>
         </section>
         <section class="section-style">
-            <a href="https://github.com/Ghosts6/Hashing_methods" class="flex justify-center items-center p-[5px] w-full text-[20px] font-bold text-center text-black hover:text-[#00008B] underline-offset-2 decoration-transparent hover:underline hover:decoration-[#00008B] transition-colors duration-300">Hashing :</a>
-            <p class="text-[16px] text-left font-light mb-[15px]">
+            <a href="https://github.com/Ghosts6/Hashing_methods" class="flex justify-center items-center p-[5px] sm:p-[4px] md:p-[6px] w-full text-[20px] sm:text-[18px] md:text-[22px] font-bold text-center text-black hover:text-[#00008B] underline-offset-2 decoration-transparent hover:underline hover:decoration-[#00008B] transition-colors duration-300">Hashing :</a>
+            <p class="text-[16px] sm:text-[14px] md:text-[18px] text-left sm:text-center md:text-left font-light mb-[15px] sm:mb-[10px] md:mb-[20px]">
                 hash function is a mathematical algorithm that takes an input and produces output as a fixed-size
                 string of characters, which is typically a hexadecimal or binary representation. This output is 
                 known as the hash value or hash code. now a days we have differend hashing method like md5 ssha 
@@ -80,8 +82,8 @@
             <img src="static/img/salt-hash-password.jpg" alt="image" class="img-section" loading="lazy" onerror="this.onerror=null;this.src='static/img/404.jpg';">
         </section>
         <section class="section-style">
-            <a href="https://github.com/Ghosts6/optimize_os" class="flex justify-center items-center p-[5px] w-full text-[20px] font-bold text-center text-black hover:text-[#00008B] underline-offset-2 decoration-transparent hover:underline hover:decoration-[#00008B] transition-colors duration-300">optimize</a>
-            <p class="text-[16px] text-left font-light mb-[15px]">
+            <a href="https://github.com/Ghosts6/optimize_os" class="flex justify-center items-center p-[5px] sm:p-[4px] md:p-[6px] w-full text-[20px] sm:text-[18px] md:text-[22px] font-bold text-center text-black hover:text-[#00008B] underline-offset-2 decoration-transparent hover:underline hover:decoration-[#00008B] transition-colors duration-300">optimize</a>
+            <p class="text-[16px] sm:text-[14px] md:text-[18px] text-left sm:text-center md:text-left font-light mb-[15px] sm:mb-[10px] md:mb-[20px]">
                 Inside this repo i place two c++ code and python code to optimize linux and windows os,with 
                 help of this files you can optimize your system and make it faster just remind that for using 
                 this file you need admin access for windows you need run it as administrator and for linux 
@@ -92,8 +94,8 @@
             <img src="static/img/optimize.jpg" alt="image" class="img-section" loading="lazy" onerror="this.onerror=null;this.src='static/img/404.jpg';">           
         </section>
         <section class="section-style">
-            <a href="https://github.com/Ghosts6/weather_news" class="flex justify-center items-center p-[5px] w-full text-[20px] font-bold text-center text-black hover:text-[#00008B] underline-offset-2 decoration-transparent hover:underline hover:decoration-[#00008B] transition-colors duration-300">weatherNews:</a>
-            <p class="text-[16px] text-left font-light mb-[15px]">
+            <a href="https://github.com/Ghosts6/weather_news" class="flex justify-center items-center p-[5px] sm:p-[4px] md:p-[6px] w-full text-[20px] sm:text-[18px] md:text-[22px] font-bold text-center text-black hover:text-[#00008B] underline-offset-2 decoration-transparent hover:underline hover:decoration-[#00008B] transition-colors duration-300">weatherNews:</a>
+            <p class="text-[16px] sm:text-[14px] md:text-[18px] text-left sm:text-center md:text-left font-light mb-[15px] sm:mb-[10px] md:mb-[20px]">
                 here we have my weather project which created with help of django and include pages like 
                 home and weather,home page: inside this page you can check out weather news about cities 
                 around word,storm ,torando,flood ,weather in your place and etc also there are links so if
@@ -107,16 +109,16 @@
             </video>
         </section>
         <section class="section-style">
-            <a href="https://github.com/Ghosts6/v2ray_openvpn_setup" class="flex justify-center items-center p-[5px] w-full text-[20px] font-bold text-center text-black hover:text-[#00008B] underline-offset-2 decoration-transparent hover:underline hover:decoration-[#00008B] transition-colors duration-300">v2ray&openvpn:</a>
-            <p class="text-[16px] text-left font-light mb-[15px]">
+            <a href="https://github.com/Ghosts6/v2ray_openvpn_setup" class="flex justify-center items-center p-[5px] sm:p-[4px] md:p-[6px] w-full text-[20px] sm:text-[18px] md:text-[22px] font-bold text-center text-black hover:text-[#00008B] underline-offset-2 decoration-transparent hover:underline hover:decoration-[#00008B] transition-colors duration-300">v2ray&openvpn:</a>
+            <p class="text-[16px] sm:text-[14px] md:text-[18px] text-left sm:text-center md:text-left font-light mb-[15px] sm:mb-[10px] md:mb-[20px]">
                This repo include bash files to setup and manage service like v2ray and openvpn in this repo we place
                 two setup method and some scripts which you can use them for service management 
             </p>
             <img src="static/img/openvpn.png" alt="image" class="img-section" loading="lazy" onerror="this.onerror=null;this.src='static/img/404.jpg';">
         </section>
         <section class="section-style">
-            <a href="https://github.com/Ghosts6/Library_management_system" class="flex justify-center items-center p-[5px] w-full text-[20px] font-bold text-center text-black hover:text-[#00008B] underline-offset-2 decoration-transparent hover:underline hover:decoration-[#00008B] transition-colors duration-300">LibraryManagementsystem:</a>
-            <p class="text-[16px] text-left font-light mb-[15px]">
+            <a href="https://github.com/Ghosts6/Library_management_system" class="flex justify-center items-center p-[5px] sm:p-[4px] md:p-[6px] w-full text-[20px] sm:text-[18px] md:text-[22px] font-bold text-center text-black hover:text-[#00008B] underline-offset-2 decoration-transparent hover:underline hover:decoration-[#00008B] transition-colors duration-300">LibraryManagementsystem:</a>
+            <p class="text-[16px] sm:text-[14px] md:text-[18px] text-left sm:text-center md:text-left font-light mb-[15px] sm:mb-[10px] md:mb-[20px]">
                This repository is dedicated to hosting programs written in languages such as C, C++, Bash, JavaScript,
                 and Python, writed for library management systems. The projects within explore difference data modeling
                 techniques, providing discussions on various methods employed for efficient data storage and retrieval.
@@ -127,8 +129,8 @@
             </video>
         </section>
         <section class="section-style">
-            <a href="https://github.com/Ghosts6/To-Do-List" class="flex justify-center items-center p-[5px] w-full text-[20px] font-bold text-center text-black hover:text-[#00008B] underline-offset-2 decoration-transparent hover:underline hover:decoration-[#00008B] transition-colors duration-300">To DO List:</a>
-            <p class="text-[16px] text-left font-light mb-[15px]">
+            <a href="https://github.com/Ghosts6/To-Do-List" class="flex justify-center items-center p-[5px] sm:p-[4px] md:p-[6px] w-full text-[20px] sm:text-[18px] md:text-[22px] font-bold text-center text-black hover:text-[#00008B] underline-offset-2 decoration-transparent hover:underline hover:decoration-[#00008B] transition-colors duration-300">To DO List:</a>
+            <p class="text-[16px] sm:text-[14px] md:text-[18px] text-left sm:text-center md:text-left font-light mb-[15px] sm:mb-[10px] md:mb-[20px]">
                 The To-Do List Application is a task management tool built with Django. It features a robust backend with REST
                 API and ORM, and a user-friendly frontend using HTML, CSS, and JavaScript. Manage tasks, authenticate users, 
                 reset passwords, and access FAQs with ease. 
@@ -138,19 +140,19 @@
             </a>
         </section>
         <section class="section-style">
-            <a href="https://github.com/Ghosts6/Blogging-System" class="flex justify-center items-center p-[5px] w-full text-[20px] font-bold text-center text-black hover:text-[#00008B] underline-offset-2 decoration-transparent hover:underline hover:decoration-[#00008B] transition-colors duration-300">Blogging System:</a>
-            <p class="text-[16px] text-left font-light mb-[15px]">
+            <a href="https://github.com/Ghosts6/Blogging-System" class="flex justify-center items-center p-[5px] sm:p-[4px] md:p-[6px] w-full text-[20px] sm:text-[18px] md:text-[22px] font-bold text-center text-black hover:text-[#00008B] underline-offset-2 decoration-transparent hover:underline hover:decoration-[#00008B] transition-colors duration-300">Blogging System:</a>
+            <p class="text-[16px] sm:text-[14px] md:text-[18px] text-left sm:text-center md:text-left font-light mb-[15px] sm:mb-[10px] md:mb-[20px]">
                 A Django and FastAPI-based platform for creating and managing articles with secure user authentication,
                 a powerful API, and advanced filtering options. 
             </p>
             <img src="static/img/Blogging.png" alt="image" class="img-section" loading="lazy" onerror="this.onerror=null;this.src='static/img/404.jpg';">
         </section>
         <section class="section-style">
-            <a class="flex justify-center items-center p-[5px] w-full text-[20px] font-bold text-center text-black hover:text-[#00008B] underline-offset-2 decoration-transparent hover:underline hover:decoration-[#00008B] transition-colors duration-300">GhLight:</a>
-            <p class="text-[16px] text-left font-light mb-[15px]">
+            <a class="flex justify-center items-center p-[5px] sm:p-[4px] md:p-[6px] w-full text-[20px] sm:text-[18px] md:text-[22px] font-bold text-center text-black hover:text-[#00008B] underline-offset-2 decoration-transparent hover:underline hover:decoration-[#00008B] transition-colors duration-300">GhLight:</a>
+            <p class="text-[16px] sm:text-[14px] md:text-[18px] text-left sm:text-center md:text-left font-light mb-[15px] sm:mb-[10px] md:mb-[20px]">
                 I developed this website from the ground up, handling every aspect including backend, frontend, database management, and SEO. Utilizing Django for the backend and Django Rest Framework (DRF) for the API, I ensured robust functionality and performance. For testing, I implemented pytest and the pytest-django plugin. The database is managed with Django's ORM and SQLite. On the frontend, I employed HTML, JavaScript, CSS, and Bootstrap to create a modern and responsive interface.
             </p>
-            <p class="text-[16px] text-left font-light mb-[15px]">
+            <p class="text-[16px] sm:text-[14px] md:text-[18px] text-left sm:text-center md:text-left font-light mb-[15px] sm:mb-[10px] md:mb-[20px]">
                 This website serves as an online store named "GhLight" showcasing and selling intelligent lighting products like moving head lights and other advanced lighting solutions. It includes various pages such as Home, Product Listings, Product Overview, Account Management, Checkout, About Us, FAQ, Contact Us, and Ticket Management. Users can explore products, view categories, watch introduction videos, and access services for inquiries, privacy policies, and terms of service.
             </p>
             <img src="static/img/ghlight.png" alt="image" class="img-section" loading="lazy" onerror="this.onerror=null;this.src='static/img/404.jpg';">
@@ -161,7 +163,9 @@
             </a>
         </div>
     </div>
-    <button id="scrollToTopButton" class="fixed bottom-[40px] right-[20px] bg-[#17C3B2] text-[#ffffff] border-none rounded-[50%] p-[10px] cursor-pointer hidden z-[999] hover:bg-[#00ffff] hover:text-[#ffffff] dark:bg-[#0B5563] dark:text-[#ffffff] hover:shadow-custom-light dark:hover:bg-[#008080] dark:hover:shadow-custom-dark transition-all" onclick="scrollToTop()">
+    <button id="scrollToTopButton" 
+            class="fixed bottom-[40px] right-[20px] bg-[#17C3B2] text-[#ffffff] border-none rounded-[50%] p-[10px] cursor-pointer hidden z-[999] hover:bg-[#00ffff] hover:text-[#ffffff] dark:bg-[#0B5563] dark:text-[#ffffff] hover:shadow-custom-light dark:hover:bg-[#008080] dark:hover:shadow-custom-dark transition-all sm:right-[5px] sm:bottom-[10px] md:right-[10px] md:bottom-[20px]" 
+            onclick="scrollToTop()">
         <i class="fas fa-arrow-up text-[24px] transition-transform"></i>
     </button>
     <script src="static/js/particles.min.js"></script>

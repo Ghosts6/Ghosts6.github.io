@@ -16,23 +16,29 @@
     <meta name="google-site-verification" content="w358AduLG9pPp2CvYg9fb8D_YgbMMI3dly2AwB_dhA0" />
     <title>GitHub Readme - Kiarash Bashokian</title>
 </head>
-<body class="m-0 p-5 font-sans text-white bg-gradient-to-br from-[#a6e3ff] via-[#85d3c8] to-[#c7b3ff] bg-fixed animate-movingColor scrollbar-thin scrollbar-thumb-rounded scrollbar-thumb-scrollbarThumb scrollbar-track-scrollbarBg dark:bg-gradient-to-br dark:from-[#2c3e50] dark:via-[#34495e] dark:to-[#5d6d7e] dark:text-[#ffffff] dark:scrollbar-track-[#34495e] dark:scrollbar-thumb-[#0be9f0] dark:scrollbar-thumb-hover-[#1ad50d]">
+<body class="m-0 p-5 sm:p-4 md:p-6 font-sans text-white bg-gradient-to-br from-[#a6e3ff] via-[#85d3c8] to-[#c7b3ff] bg-fixed animate-movingColor scrollbar-thin scrollbar-thumb-rounded scrollbar-thumb-scrollbarThumb scrollbar-track-scrollbarBg dark:bg-gradient-to-br dark:from-[#2c3e50] dark:via-[#34495e] dark:to-[#5d6d7e] dark:text-[#ffffff] dark:scrollbar-track-[#34495e] dark:scrollbar-thumb-[#0be9f0] dark:scrollbar-thumb-hover-[#1ad50d]">
     <div id="particles-js"></div>
-    <div class="icons transition-all ease-in-out delay-[0.3s]">
-        <button id="dark-mode-toggle" class="absolute z-[999] top-[20px] right-[20px] bg-transparent border-none cursor-pointer p-0 m-0 text-[24px] text-inherit focus:outline-none" onclick="toggleDarkMode()">
-            <i id="dark-mode-icon" class="fas fa-moon text-[42px] text-[#ffffff] transition-all ease-in-out transform hover:scale-[1.2]"></i>
+    <div class="icons w-full h-14 flex items-center justify-between transition-all ease-in-out delay-[0.3s] relative">
+        <a href="https://kiarashbashokian.com" target="_blank" class="logo-link p-[10px] transition-all ease-in-out transform hover:scale-[1.2] sm:p-[12px] md:p-[14px]">
+            <img src="static/img/logo.png" alt="Logo of Kiarash Bashokian" class="logo w-[60px] h-auto pointer-events-none sm:w-[50px] md:w-[70px]">
+        </a>
+        <a href="https://github.com/Ghosts6" target="_blank" id="github-link" class="cursor-pointer sm:left-[40%] md:left-[45%]">
+            <i class="fa-brands fa-github text-[42px] text-[#ffffff] mr-10 transition-all ease-in-out transform hover:scale-[1.2] sm:text-[36px] md:text-[40px]"></i>
+        </a>
+        <button id="dark-mode-toggle" 
+                class="bg-transparent border-none cursor-pointer p-0 m-0 text-[24px] text-inherit focus:outline-none sm:text-[28px] md:text-[32px]" 
+                onclick="toggleDarkMode()">
+            <i id="dark-mode-icon" class="fas fa-moon text-[42px] text-[#ffffff] transition-all ease-in-out transform hover:scale-[1.2] sm:text-[36px] md:text-[40px]"></i>
         </button>
-        <a href="https://kiarashbashokian.com" target="_blank" class="logo-link table-row p-[10px] transition-all ease-in-out transform hover:scale-[1.2]">
-            <img src="static/img/logo.png" alt="Your Logo" class="logo left-[20px] w-[60px] h-auto pointer-events-none">
-        </a>
-        <a href="https://github.com/Ghosts6" target="_blank" id="github-link" class="absolute z-[999] top-[20px] left-[48%] cursor-pointer">
-            <i class="fa-brands fa-github text-[42px] text-[#ffffff] transition-all ease-in-out transform hover:scale-[1.2]"></i>
-        </a>
     </div>
     <div id="scrollable-content" class="p-5 m-auto max-w-[800px] text-center bg-sectionBg border-[5px] border-double border-sectionBorder dark:border-sectionBorderDark rounded-lg">
-        <h3 class="font-light text-[26px] text-[#000000] mb-[15px] text-center">💫 About Me:</h3>
-        <h1 class="font-bold text-[32px] text-[#00ffff] mb-[20px] text-center">Hey there! 👋 I'm Kiarash:</h1>
-        <p class="font-light text-[18px] text-left mb-[20px] leading-[1.6]">
+        <h3 class="font-light text-[26px] text-[#000000] mb-[15px] text-center sm:text-[22px] sm:mb-[10px] md:text-[28px] md:mb-[15px]">
+            💫 About Me:
+        </h3>
+        <h1 class="font-bold text-[32px] text-[#00ffff] mb-[20px] text-center sm:text-[28px] sm:mb-[15px] md:text-[36px] md:mb-[25px]">
+            Hey there! 👋 I'm Kiarash:
+        </h1>
+        <p class="font-light text-[18px] text-left mb-[20px] leading-[1.6] sm:text-[16px] sm:mb-[15px] md:text-[18px] md:mb-[20px]">
             a passionate 19-year-old studying Computer Science with a keen interest in web development.
             I made the decision to specialize as a backend developer due to my fascination with building robust and scalable web applications.
             My curiosity extends beyond software development; I have a genuine enthusiasm for network infrastructure and IT systems.
@@ -42,34 +48,30 @@
         <section id="socials" class="section-style">
             <h2 class="custom-h2">🌐 Socials:</h2>
             <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 m-auto max-w-[600px]">
-                <div class="flex flex-col items-center">
-                    <li class="social-li">
-                        <i class="fab fa-discord mr-[10px] text-[24px] text-[#7289da] transition hover:text-[#7289da]"></i>
-                        <a href="https://discord.gg/ghost.rs6" class="text-white text-[18px] transition hover:underline hover:text-[#7289da]">Discord</a>
-                    </li>
-                    <li class="social-li">
-                        <i class="fab fa-instagram mr-[10px] text-[24px] text-[#e4405f] transition hover:text-[#e4405f]"></i>
-                        <a href="https://instagram.com/kiarash82.42?igshid=OGQ5ZDc2ODk2ZA==" class="text-white text-[18px] transition hover:underline hover:text-[#e4405f]">Instagram</a>
-                    </li>
-                    <li class="social-li">
-                        <i class="fab fa-linkedin mr-[10px] text-[24px] text-[#0077b5] transition hover:text-[#0077b5]"></i>
-                        <a href="https://www.linkedin.com/in/kiarashbashokian?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BNacNg3ZESE2Aqtxrj0XmUw%3D%3D" class="text-white text-[18px] transition hover:underline hover:text-[#0077b5]">LinkedIn</a>
-                    </li>
-                </div>
-                <div class="flex flex-col items-center">
-                    <li class="social-li">
-                        <i class="fab fa-stack-overflow mr-[10px] text-[24px] text-[#f48024] transition hover:text-[#f48024]"></i>
-                        <a href="https://stackoverflow.com/users/17490586" class="text-white text-[18px] transition hover:underline hover:text-[#f48024]">Stack Overflow</a>
-                    </li>
-                    <li class="social-li">
-                        <i class="fab fa-twitch mr-[10px] text-[24px] text-[#9146ff] transition hover:text-[#9146ff]"></i>
-                        <a href="https://twitch.tv/MKGHOSTK" class="text-white text-[18px] transition hover:underline hover:text-[#9146ff]">Twitch</a>
-                    </li>
-                    <li class="social-li">
-                        <i class="fab fa-youtube mr-[10px] text-[24px] text-[#ff0000] transition hover:text-[#ff0000]"></i>
-                        <a href="https://youtube.com/@https://youtube.com/@https://youtube.com/@kiarashbashokian6411" class="text-white text-[18px] transition hover:underline hover:text-[#ff0000]">YouTube</a>
-                    </li>
-                </div>
+                <li class="social-li">
+                    <i class="fab fa-discord mr-[10px] text-[24px] text-[#7289da] transition hover:text-[#7289da]"></i>
+                    <a href="https://discord.gg/ghost.rs6" class="text-white text-[18px] transition hover:underline hover:text-[#7289da]">Discord</a>
+                </li>
+                <li class="social-li">
+                    <i class="fab fa-instagram mr-[10px] text-[24px] text-[#e4405f] transition hover:text-[#e4405f]"></i>
+                    <a href="https://instagram.com/kiarash82.42?igshid=OGQ5ZDc2ODk2ZA==" class="text-white text-[18px] transition hover:underline hover:text-[#e4405f]">Instagram</a>
+                </li>
+                <li class="social-li">
+                    <i class="fab fa-linkedin mr-[10px] text-[24px] text-[#0077b5] transition hover:text-[#0077b5]"></i>
+                    <a href="https://www.linkedin.com/in/kiarashbashokian" class="text-white text-[18px] transition hover:underline hover:text-[#0077b5]">LinkedIn</a>
+                </li>
+                <li class="social-li">
+                    <i class="fab fa-stack-overflow mr-[10px] text-[24px] text-[#f48024] transition hover:text-[#f48024]"></i>
+                    <a href="https://stackoverflow.com/users/17490586" class="text-white text-[18px] transition hover:underline hover:text-[#f48024]">Stack Overflow</a>
+                </li>
+                <li class="social-li">
+                    <i class="fab fa-twitch mr-[10px] text-[24px] text-[#9146ff] transition hover:text-[#9146ff]"></i>
+                    <a href="https://twitch.tv/MKGHOSTK" class="text-white text-[18px] transition hover:underline hover:text-[#9146ff]">Twitch</a>
+                </li>
+                <li class="social-li">
+                    <i class="fab fa-youtube mr-[10px] text-[24px] text-[#ff0000] transition hover:text-[#ff0000]"></i>
+                    <a href="https://youtube.com/@kiarashbashokian6411" class="text-white text-[18px] transition hover:underline hover:text-[#ff0000]">YouTube</a>
+                </li>
             </ul>
         </section>
         <section id="tech-stack" class="section-style">
@@ -344,7 +346,9 @@
             </div>
         </section>
     </div>
-    <button id="scrollToTopButton" class="fixed bottom-[40px] right-[20px] bg-[#17C3B2] text-[#ffffff] border-none rounded-[50%] p-[10px] cursor-pointer hidden z-[999] hover:bg-[#00ffff] hover:text-[#ffffff] dark:bg-[#0B5563] dark:text-[#ffffff] hover:shadow-custom-light dark:hover:bg-[#008080] dark:hover:shadow-custom-dark transition-all" onclick="scrollToTop()">
+    <button id="scrollToTopButton" 
+            class="fixed bottom-[40px] right-[20px] bg-[#17C3B2] text-[#ffffff] border-none rounded-[50%] p-[10px] cursor-pointer hidden z-[999] hover:bg-[#00ffff] hover:text-[#ffffff] dark:bg-[#0B5563] dark:text-[#ffffff] hover:shadow-custom-light dark:hover:bg-[#008080] dark:hover:shadow-custom-dark transition-all sm:right-[5px] sm:bottom-[10px] md:right-[10px] md:bottom-[20px]" 
+            onclick="scrollToTop()">
         <i class="fas fa-arrow-up text-[24px] transition-transform"></i>
     </button>
     <script src="static/js/particles.min.js"></script>

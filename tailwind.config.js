@@ -81,6 +81,10 @@ module.exports = {
         '1': '1 1 48%',
       },
 
+      screens: {
+        'md-lg': { min: '600px', max: '1200px' },
+      },
+
     },
   },
   plugins: [
