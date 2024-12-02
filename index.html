@@ -346,11 +346,23 @@
             </div>
         </section>
     </div>
-    <button id="scrollToTopButton" 
-            class="fixed bottom-[40px] right-[20px] bg-[#17C3B2] text-[#ffffff] border-none rounded-[50%] p-[10px] cursor-pointer hidden z-[999] hover:bg-[#00ffff] hover:text-[#ffffff] dark:bg-[#0B5563] dark:text-[#ffffff] hover:shadow-custom-light dark:hover:bg-[#008080] dark:hover:shadow-custom-dark transition-all sm:right-[5px] sm:bottom-[10px] md:right-[10px] md:bottom-[20px]" 
+
+    <button id="scrollToTopButton"
+        class="fixed bottom-[40px] right-[20px] 
+            bg-gradient-to-tr from-[#9cd1d1] to-[#7fb3d5] 
+            text-white shadow-lg rounded-lg p-3 cursor-pointer hidden z-[999]
+            hover:from-[#00ffff] hover:to-[#008080] hover:shadow-xl 
+            active:scale-95 active:bg-[#00ced1] 
+            transition-transform duration-300 ease-in-out
+            dark:bg-gradient-to-tr dark:from-[#0B5563] dark:to-[#065050]
+            dark:hover:from-[#008080] dark:hover:to-[#0be9f0] dark:active:bg-[#007070]
+            sm:bottom-[10px] sm:right-[5px] 
+            md:bottom-[20px] md:right-[10px]"
             onclick="scrollToTop()">
-        <i class="fas fa-arrow-up text-[24px] transition-transform"></i>
+        <img src="static/icon/upArrow.svg" alt="Scroll to top" 
+            class="w-6 h-6 mx-auto animate-bounce-up hover:animate-none transition-transform active:translate-y-[2px]" />
     </button>
+    
     <script src="static/js/particles.min.js"></script>
     <script src="static/js/meme.js"></script>
     <script src="static/js/script.js"></script>

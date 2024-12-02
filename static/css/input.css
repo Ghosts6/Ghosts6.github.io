@@ -80,11 +80,11 @@ body::-webkit-scrollbar-thumb:hover {
   }
 
   .projects-video {
-    @apply border-solid border-projectVideo border-[2px] inline dark:border-projectVideoDark sm:border-[1px] md:border-[2px];
+    @apply w-[600px] h-[400px] border-solid border-projectVideo border-[2px] inline dark:border-projectVideoDark sm:border-[1px] md:border-[2px] sm:w-[100%] sm:h-[auto];
   }
 
   .img-section {
-    @apply w-[600px] h-[400px] border-solid border-projectVideo border-[2px] inline dark:border-projectVideoDark sm:w-[100%] sm:h-[auto] md:w-[500px] md:h-[350px];
+    @apply w-[600px] h-[400px] border-solid border-projectVideo border-[2px] inline dark:border-projectVideoDark sm:w-[100%] sm:h-[auto];
   }
 
 }

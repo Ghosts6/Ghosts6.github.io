@@ -34,7 +34,7 @@
             <i id="dark-mode-icon" class="fas fa-moon text-[42px] text-[#ffffff] transition-all ease-in-out transform hover:scale-[1.2] sm:text-[36px] md:text-[40px]"></i>
         </button>
     </div>
-    <div id="projects-content" class="p-5 sm:p-4 md:p-6 m-auto max-w-[800px] sm:max-w-[600px] md:max-w-[700px] text-center bg-sectionBg border-[5px] border-double border-sectionBorder dark:border-sectionBorderDark rounded-lg">
+    <div id="projects-content" class="p-5 m-auto max-w-[800px] text-center bg-sectionBg border-[5px] border-double border-sectionBorder dark:border-sectionBorderDark rounded-lg">
         <section class="section-style">
             <a href="https://github.com/Ghosts6/DjangoGameHub" class="flex justify-center items-center p-[5px] sm:p-[4px] md:p-[6px] w-full text-[20px] sm:text-[18px] md:text-[22px] font-bold text-center text-black hover:text-[#00008B] underline-offset-2 decoration-transparent hover:underline hover:decoration-[#00008B] transition-colors duration-300">DjangoGameHub :</a>
             <p class="text-[16px] sm:text-[14px] md:text-[18px] text-left sm:text-center md:text-left font-light mb-[15px] sm:mb-[10px] md:mb-[20px]">
@@ -43,8 +43,8 @@
                 seamless performance, with HTML, CSS, and JavaScript for a captivating frontend. Track your scores, compete on the leaderboard,
                 and aim for the top spot. Join the gaming community, challenge yourself, and let the games begin!
             </p>
-            <video width="600" height="400" controls autoplay loop class="projects-video" poster="static/img/django_game_hub.png">
-                <source src="https://github.com/Ghosts6/DjangoGameHub/assets/95994481/b24b4082-31e8-46d8-a7c6-1805e034ef4d" type="video/webm" loading="lazy">
+            <video controls autoplay loop class="projects-video" poster="static/img/django_game_hub.png">
+                <source src="static/video/Django_game_hub.webm" type="video/webm" loading="lazy">
                 Your browser does not support the video tag.
             </video>
         </section>
@@ -55,8 +55,8 @@
                 like HTML, CSS, and JavaScript. The system allows clients to create ticket requests for the IT team, who can receive 
                 and respond to them efficiently.
             </p>
-            <video width="600" height="400" controls autoplay loop class="projects-video" poster="static/img/local_website.png">
-                <source src="https://github.com/Ghosts6/Local-website/assets/95994481/46b243b6-2994-43fd-8d4b-d0243a62ef08" type="video/webm" loading="lazy">
+            <video controls autoplay loop class="projects-video" poster="static/img/local_website.png">
+                <source src="static/video/ticket_system:.webm" type="video/webm" loading="lazy">
                 Your browser does not support the video tag.
             </video>
         </section>
@@ -66,8 +66,8 @@
                 in this section we can check my matrix project that i create matrix animations with language like
                 c++,python,bash,cmd and html/css/js with different features
             </P>
-            <video width="600" height="400" controls autoplay loop class="projects-video" poster="static/img/matrix.png">
-                <source src="https://github.com/Ghosts6/matrix/assets/95994481/41938aa6-53e8-4fe9-86cc-ae505271f9af" type="video/webm" loading="lazy">
+            <video controls autoplay loop class="projects-video" poster="static/img/matrix.png">
+                <source src="static/video/Matrix.webm" type="video/webm" loading="lazy">
                 Your browser does not support the video tag.
             </video>
         </section>
@@ -103,8 +103,8 @@
                 for searching and check out weather in differend locations ,in this page by searching city name 
                 you will recive data about location like weather,temperature,wind speed,time and etc
             </p>
-            <video width="600" height="400" controls autoplay loop class="projects-video" poster="static/img/weather_news.png">
-                <source src="https://github.com/Ghosts6/weather_news/assets/95994481/4346be05-13fa-4f3f-aaa7-a239d98510a7" type="video/webm" loading="lazy">
+            <video controls autoplay loop class="projects-video" poster="static/img/weather_news.png">
+                <source src="static/video/weather_news.webm" type="video/webm" loading="lazy">
                 Your browser does not support the video tag.
             </video>
         </section>
@@ -123,8 +123,8 @@
                 and Python, writed for library management systems. The projects within explore difference data modeling
                 techniques, providing discussions on various methods employed for efficient data storage and retrieval.
             </p>
-            <video width="600" height="400" controls autoplay loop class="projects-video" poster="static/img/library_management.png">
-                <source src="https://github.com/Ghosts6/Library_management_system/assets/95994481/18f40d1b-4e9a-4860-847e-22f7942b19a5" type="video/webm" loading="lazy">
+            <video controls autoplay loop class="projects-video" poster="static/img/library_management.png">
+                <source src="static/video/Library_management_system.webm" type="video/webm" loading="lazy">
                 Your browser does not support the video tag.
             </video>
         </section>
@@ -163,11 +163,23 @@
             </a>
         </div>
     </div>
-    <button id="scrollToTopButton" 
-            class="fixed bottom-[40px] right-[20px] bg-[#17C3B2] text-[#ffffff] border-none rounded-[50%] p-[10px] cursor-pointer hidden z-[999] hover:bg-[#00ffff] hover:text-[#ffffff] dark:bg-[#0B5563] dark:text-[#ffffff] hover:shadow-custom-light dark:hover:bg-[#008080] dark:hover:shadow-custom-dark transition-all sm:right-[5px] sm:bottom-[10px] md:right-[10px] md:bottom-[20px]" 
+
+    <button id="scrollToTopButton"
+        class="fixed bottom-[40px] right-[20px] 
+            bg-gradient-to-tr from-[#9cd1d1] to-[#7fb3d5] 
+            text-white shadow-lg rounded-lg p-3 cursor-pointer hidden z-[999]
+            hover:from-[#00ffff] hover:to-[#008080] hover:shadow-xl 
+            active:scale-95 active:bg-[#00ced1] 
+            transition-transform duration-300 ease-in-out
+            dark:bg-gradient-to-tr dark:from-[#0B5563] dark:to-[#065050]
+            dark:hover:from-[#008080] dark:hover:to-[#0be9f0] dark:active:bg-[#007070]
+            sm:bottom-[10px] sm:right-[5px] 
+            md:bottom-[20px] md:right-[10px]"
             onclick="scrollToTop()">
-        <i class="fas fa-arrow-up text-[24px] transition-transform"></i>
+        <img src="static/icon/upArrow.svg" alt="Scroll to top" 
+            class="w-6 h-6 mx-auto animate-bounce-up hover:animate-none transition-transform active:translate-y-[2px]" />
     </button>
+
     <script src="static/js/particles.min.js"></script>
     <script src="static/js/script.js"></script>
 </body>

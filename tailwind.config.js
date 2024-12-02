@@ -17,10 +17,16 @@ module.exports = {
           '50%': { backgroundPosition: '100% 50%' },
           '100%': { backgroundPosition: '0% 50%' },
         },
+        'bounce-up': {
+          '0%, 20%, 50%, 80%, 100%': { transform: 'translateY(0)' },
+          '40%': { transform: 'translateY(-10px)' },
+          '60%': { transform: 'translateY(-6px)' },
+        },
       },
       animation: {
         movingColor: 'movingColor 10s infinite',
         gradient: 'gradient 3s ease infinite',
+        'bounce-up': 'bounce-up 1.5s infinite',
       },
 
       backgroundImage: {
