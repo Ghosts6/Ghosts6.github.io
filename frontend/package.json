@@ -1,0 +1,53 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "About Me<br>Hey there!  I'm Kiarash, a passionate 19yearsold studying Computer Science with a keen interest in web development. I made the decision to specialize as a backend developer due to my fascination with building robust and scalable web applications.<br><br>My curiosity extends beyond software development; I have a genuine enthusiasm for network infrastructure and IT systems. I've had the opportunity to gain practical experience working with IT team, where I've learned to troubleshoot, manage networks, and handle various technical challenges.<br>and many other thing like1 linux(arch/ubuntu/debian)2 ccna3 network pluse4 vcp-icm 5 backup exec<br><br>Throughout my journey, I've actively engaged in projects that align with my interests. This exposure has equipped me with knowledge and hands-on experience in a range of software tools, enabling me to adapt and innovate within the ever-evolving landscape of technology.<br><br>I'm excited about the prospect of continuous learning and growth in the world of software development and IT, seeking opportunities to expand my skills and contribute to impactful projects.<br><br>Feel free to connect with me! ",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.9.1",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.104",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.25.1",
+    "react-scripts": "5.0.1",
+    "tailwind-scrollbar": "^3.1.0",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.14"
+  }
+}

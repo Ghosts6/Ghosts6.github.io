@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-primary text-text dark:bg-dark-primary dark:text-dark-text;
+    --scrollbar-track: theme('colors.primary');
+    --scrollbar-thumb: #A0AEC0;
+    --scrollbar-thumb-hover: #718096;
+    --scrollbar-border: theme('colors.primary');
+  }
+
+  body.dark {
+    --scrollbar-track: theme('colors.dark-primary');
+    --scrollbar-thumb: #4A5568;
+    --scrollbar-thumb-hover: #718096;
+    --scrollbar-border: theme('colors.dark-primary');
+  }
+
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb);
+    border-radius: 6px;
+    border: 3px solid var(--scrollbar-border);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-thumb-hover);
+  }
+}
+
+@layer components {
+  .loader {
+    @apply fixed top-0 left-0 w-full h-full bg-primary dark:bg-dark-primary flex justify-center items-center z-50;
+  }
+
+  .loader-inner {
+    @apply w-16 h-16 border-4 border-accent border-t-transparent rounded-full animate-spin;
+  }
+
+  .section-style {
+    @apply bg-secondary dark:bg-dark-secondary p-8 rounded-lg shadow-md;
+  }
+
+  .custom-h2 {
+    @apply text-3xl font-bold mb-4;
+  }
+
+  .custom-p {
+    @apply text-lg leading-relaxed;
+  }
+
+  .social-li {
+    @apply inline-block mx-2;
+  }
+
+  .tech-stack-li {
+    @apply flex items-center my-2;
+  }
+
+  .tech-icon {
+    @apply w-8 h-8 mr-2;
+  }
+
+  .project-button,
+  .home-button {
+    @apply bg-accent text-white font-bold py-2 px-4 rounded-full hover:bg-accent-hover dark:bg-dark-accent dark:hover:bg-dark-accent-hover transition-colors;
+  }
+
+  .projects-video,
+  .img-section {
+    @apply w-full rounded-lg shadow-md;
+  }
+
+  .leet-btn {
+    @apply cursor-pointer h-11 leading-[2.75rem] w-52 inline-block text-white no-underline font-tahoma uppercase text-center text-sm font-bold tracking-widest p-0 border-2 border-leet rounded-leet bg-leet transition duration-300 relative overflow-hidden hover:text-gray-800 hover:bg-leet-hover;
+  }
+}
