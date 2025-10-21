@@ -20,7 +20,7 @@ const ParticlesBackground: React.FC = () => {
       fpsLimit: 60,
       pauseOnBlur: true,
       interactivity: {
-        detectsOn: 'canvas',
+        detectsOn: 'window',
         events: {
           onClick: {
             enable: true,
@@ -36,8 +36,14 @@ const ParticlesBackground: React.FC = () => {
           push: {
             quantity: 4,
           },
+          grab: {
+            distance: 150,
+            links: {
+              opacity: 1,
+            },
+          },
           repulse: {
-            distance: 200,
+            distance: 100,
             duration: 0.4,
           },
         },

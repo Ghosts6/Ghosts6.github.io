@@ -12,7 +12,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, media, po
   const isVideo = media.endsWith('.webm');
 
   return (
-    <div className="bg-secondary dark:bg-dark-secondary rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+    <div className="bg-secondary dark:bg-dark-secondary rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:-translate-y-1 flex flex-col w-96">
       <a href={link} target="_blank" rel="noopener noreferrer">
         {isVideo ? (
           <video controls autoPlay loop muted poster={poster} className="w-full h-48 object-cover">
@@ -23,11 +23,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, media, po
           <img src={media} alt={title} className="w-full h-48 object-cover" />
         )}
       </a>
-      <div className="p-6">
+      <div className="p-6 flex-grow flex flex-col">
         <a href={link} target="_blank" rel="noopener noreferrer">
           <h3 className="text-2xl font-bold text-accent dark:text-dark-accent hover:underline">{title}</h3>
         </a>
-        <p className="mt-2 text-text dark:text-dark-text">{description}</p>
+        <p 
+          className="mt-2 text-text dark:text-dark-text flex-grow"
+          style={{
+            display: '-webkit-box',
+            WebkitLineClamp: 3,
+            WebkitBoxOrient: 'vertical',
+            overflow: 'hidden',
+            textOverflow: 'ellipsis'
+          }}
+        >
+          {description}
+        </p>
       </div>
     </div>
   );

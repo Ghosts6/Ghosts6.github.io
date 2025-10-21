@@ -16,8 +16,8 @@ const Socials: React.FC = () => {
         <h2 className="text-3xl font-bold mb-4 text-accent dark:text-dark-accent">🌐 Socials</h2>
         <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {socials.map((social) => (
-            <li key={social.name} className="flex items-center">
-              <i className={`${social.icon} mr-3 text-2xl`} style={{ color: social.color }}></i>
+            <li key={social.name} className="flex items-center p-3 rounded-lg transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-700">
+              <i className={`${social.icon} mr-3 text-2xl transition-transform duration-200 hover:scale-110`} style={{ color: social.color }}></i>
               <a href={social.url} target="_blank" rel="noopener noreferrer" className="text-lg text-text dark:text-dark-text hover:underline" style={{ color: social.color }}>
                 {social.name}
               </a>

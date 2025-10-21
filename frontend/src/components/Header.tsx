@@ -15,13 +15,13 @@ const Header: React.FC = () => {
           </nav>
         </div>
         <div className="flex items-center space-x-6">
-          <a href="https://kiarashbashokian.com/" target="_blank" rel="noopener noreferrer" className="text-xl text-text dark:text-dark-text hover:text-accent dark:hover:text-dark-accent transition-colors">
+          <a href="https://kiarashbashokian.com/" target="_blank" rel="noopener noreferrer" className="text-xl text-text dark:text-dark-text hover:text-accent dark:hover:text-dark-accent transition-all duration-200 hover:scale-110 active:scale-90">
             <i className="fas fa-globe"></i>
           </a>
-          <a href="https://ir.linkedin.com/in/kiarashbashokian" target="_blank" rel="noopener noreferrer" className="text-xl text-text dark:text-dark-text hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+          <a href="https://ir.linkedin.com/in/kiarashbashokian" target="_blank" rel="noopener noreferrer" className="text-xl text-text dark:text-dark-text hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200 hover:scale-110 active:scale-90">
             <i className="fab fa-linkedin"></i>
           </a>
-          <a href="https://github.com/Ghosts6" target="_blank" rel="noopener noreferrer" className="text-xl text-text dark:text-dark-text hover:text-accent dark:hover:text-dark-accent transition-colors">
+          <a href="https://github.com/Ghosts6" target="_blank" rel="noopener noreferrer" className="text-xl text-text dark:text-dark-text hover:text-accent dark:hover:text-dark-accent transition-all duration-200 hover:scale-110 active:scale-90">
             <i className="fab fa-github"></i>
           </a>
           <DarkModeToggle />

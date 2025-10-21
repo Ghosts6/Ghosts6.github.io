@@ -32,8 +32,8 @@ module.exports = {
         gradientColor: 'linear-gradient(45deg, #a6e3ff, #85d3c8, #c7b3ff)',
       },
       colors: {
-        primary: '#F0F2F5',
-        secondary: '#FFFFFF',
+        primary: '#E0E2E5',
+        secondary: '#F8F8F8',
         accent: '#3B82F6',
         'accent-hover': '#2563EB',
         text: '#1F2937',
