@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import AboutSection from './AboutSection';
 import EducationSection from './EducationSection';
 import WorkExperienceSection from './WorkExperienceSection';
-import TechStack from '../../components/TechStack';
+import TechStack from '../../components/home/TechStack';
 
 type SectionKey = 'about' | 'education' | 'experience' | 'skills';
 

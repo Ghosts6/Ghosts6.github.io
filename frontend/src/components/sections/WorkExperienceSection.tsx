@@ -5,31 +5,52 @@ const WorkExperienceSection: React.FC = () => {
     <div className="p-8 bg-secondary dark:bg-dark-secondary rounded-lg shadow-xl border border-gray-200 dark:border-gray-700">
       <h3 className="text-2xl font-bold mb-4 text-accent dark:text-dark-accent border-b border-accent dark:border-dark-accent pb-2">💼 Work Experience</h3>
       <div className="mb-6">
-        <h4 className="text-xl font-semibold text-text dark:text-dark-text">Software Engineer Intern</h4>
-        <p className="text-lg text-gray-600 dark:text-gray-400">Tech Solutions Inc. | City, Country</p>
-        <p className="text-md text-gray-500 dark:text-gray-500 mb-2">May 2023 – August 2023</p>
+        <h4 className="text-xl font-semibold text-text dark:text-dark-text">Programmer Assistant</h4>
+        <p className="text-lg text-gray-600 dark:text-gray-400">York University – UIT LTS Team | 08/2025 - Present</p>
         <ul className="list-disc list-inside text-lg leading-relaxed text-text dark:text-dark-text">
-          <li>Developed and maintained backend APIs using Python and Django REST Framework, improving data processing efficiency by 15%.</li>
-          <li>Collaborated with a team of 5 engineers on designing and implementing new features for a customer management platform.</li>
-          <li>Wrote comprehensive unit and integration tests, increasing code coverage by 20%.</li>
-          <li>Participated in agile development cycles, including daily stand-ups and sprint reviews.</li>
+          <li>Developing AI-driven backend systems using Python, TypeScript, FastAPI, and frameworks such as CRIA and RAGFlow.</li>
+          <li>Collaborating with the Learning Technology Services team to integrate machine learning workflows into university applications.</li>
+          <li>Supporting the design of scalable, secure backend services to improve data processing and automation.</li>
         </ul>
       </div>
       <div className="mb-6">
-        <h4 className="text-xl font-semibold text-text dark:text-dark-text">Junior Web Developer</h4>
-        <p className="text-lg text-gray-600 dark:text-gray-400">Creative Digital Agency | City, Country</p>
-        <p className="text-md text-gray-500 dark:text-gray-500 mb-2">January 2022 – April 2022</p>
+        <h4 className="text-xl font-semibold text-text dark:text-dark-text">Network Service Assistant</h4>
+        <p className="text-lg text-gray-600 dark:text-gray-400">York University – UIT Network Team | 05/2025 – 08/2025</p>
         <ul className="list-disc list-inside text-lg leading-relaxed text-text dark:text-dark-text">
-          <li>Assisted in the development of responsive front-end interfaces using React and Tailwind CSS for various client projects.</li>
-          <li>Optimized website performance, reducing load times by an average of 10 seconds.</li>
-          <li>Worked closely with UI/UX designers to translate wireframes and mockups into functional web pages.</li>
+          <li>Contributed to automation initiatives by writing backend scripts to extract and process data from Cisco DNA Center (DNAC).</li>
+          <li>Assisted in server room surveys and infrastructure optimization projects, improving system documentation and monitoring.</li>
+          <li>Supported the deployment and management of Cisco-based systems, gaining hands-on experience with enterprise network automation.</li>
         </ul>
       </div>
-      <p className="text-lg leading-relaxed text-text dark:text-dark-text">
-        Always seeking new challenges and opportunities to grow as a software engineer.
-      </p>
+      <div className="mb-6">
+        <h4 className="text-xl font-semibold text-text dark:text-dark-text">Web Developer</h4>
+        <p className="text-lg text-gray-600 dark:text-gray-400">Gh Light | Tehran, Iran</p>
+        <p className="text-md text-gray-500 dark:text-gray-500 mb-2">03/2024–05/2024</p>
+        <ul className="list-disc list-inside text-lg leading-relaxed text-text dark:text-dark-text">
+          <li>Built and optimized a full-stack website (backend, frontend, database, SEO) within a 2-month timeline.</li>
+          <li>Improved system performance and user experience through code optimization and efficient database design.</li>
+        </ul>
+      </div>
+      <div className="mb-6">
+        <h4 className="text-xl font-semibold text-text dark:text-dark-text">IT Expert</h4>
+        <p className="text-lg text-gray-600 dark:text-gray-400">Arya Heavy Machinery | Tehran, Iran</p>
+        <p className="text-md text-gray-500 dark:text-gray-500 mb-2">11/2023 - 02/2024</p>
+        <ul className="list-disc list-inside text-lg leading-relaxed text-text dark:text-dark-text">
+          <li>Delivered enterprise IT support across servers, firewalls, and network infrastructure for 200+ employees.</li>
+        </ul>
+      </div>
+      <div className="mb-6">
+        <h4 className="text-xl font-semibold text-text dark:text-dark-text">Qt Developer Trainee</h4>
+        <p className="text-lg text-gray-600 dark:text-gray-400">Tehran, Iran</p>
+        <p className="text-md text-gray-500 dark:text-gray-500 mb-2">09/2022 - 12/2022</p>
+        <ul className="list-disc list-inside text-lg leading-relaxed text-text dark:text-dark-text">
+          <li>Enhanced C++/C OOP and memory management skills while developing applications with the Qt framework.</li>
+          <li>Designed and tested GUI components, gaining practical experience in software development lifecycles.</li>
+        </ul>
+      </div>
     </div>
   );
 };
 
 export default WorkExperienceSection;
+

@@ -3,11 +3,9 @@ import React from 'react';
 const LeetCode: React.FC = () => {
   return (
     <div className="mt-16">
-      <div className="max-w-4xl mx-auto bg-secondary dark:bg-dark-secondary p-8 rounded-lg shadow-md">
-        <div className="flex items-center justify-center mb-4">
-          <img src="static/img/leet_code.svg" alt="leetCodeIcon" className="w-12 h-12 mr-4" />
-          <h2 className="text-3xl font-bold text-accent dark:text-dark-accent">LeetCode</h2>
-        </div>
+      <div className="max-w-4xl mx-auto bg-secondary dark:bg-dark-secondary p-8 rounded-lg shadow-md text-center">
+        <img src="static/img/leet_code.svg" alt="leetCodeIcon" className="w-12 h-12 mx-auto mb-4" />
+        <h2 className="text-3xl font-bold mb-4 text-accent dark:text-dark-accent">LeetCode</h2>
         <p className="text-lg leading-relaxed">
           Welcome to my LeetCode exercise repository! Here, you'll find a collection of my solutions to various LeetCode problems, implemented in C++, C, Python, SQL, JavaScript, and Bash.
         </p>
@@ -36,3 +34,4 @@ const LeetCode: React.FC = () => {
 };
 
 export default LeetCode;
+

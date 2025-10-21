@@ -1,17 +1,19 @@
 import React from 'react';
-import Socials from '../components/Socials';
-import ImageSections from '../components/ImageSections';
-import LeetCode from '../components/LeetCode';
-import ProjectsSection from '../components/ProjectsSection';
+import Socials from '../components/home/Socials';
+import ImageSections from '../components/home/ImageSections';
+import LeetCode from '../components/home/LeetCode';
+import ProjectsSection from '../components/home/ProjectsSection';
 import HeroContentSwitcher from '../components/sections/HeroContentSwitcher';
-import useScrollAnimation from '../hooks/useScrollAnimation'; // New import
+import MiniGameSection from '../components/home/MiniGameSection';
+import useScrollAnimation from '../hooks/useScrollAnimation';
 
 const Home: React.FC = () => {
-  const [heroRef, heroVisible] = useScrollAnimation(); // New ref for hero
+  const [heroRef, heroVisible] = useScrollAnimation(); 
   const [socialsRef, socialsVisible] = useScrollAnimation();
   const [imageSectionsRef, imageSectionsVisible] = useScrollAnimation();
   const [leetCodeRef, leetCodeVisible] = useScrollAnimation();
-  const [projectsSectionRef, projectsSectionVisible] = useScrollAnimation();
+  const [miniGameRef, miniGameVisible] = useScrollAnimation();
+  const [projectsSectionRef, projectsSectionRefVisible] = useScrollAnimation();
 
   return (
     <div className="text-text dark:text-dark-text">
@@ -31,7 +33,11 @@ const Home: React.FC = () => {
         <LeetCode />
       </div>
 
-      <div ref={projectsSectionRef} className={`max-w-5xl mx-auto px-4 py-8 transition-all duration-700 ease-out ${projectsSectionVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+      <div ref={miniGameRef} className={`max-w-5xl mx-auto px-4 py-8 transition-all duration-700 ease-out ${miniGameVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <MiniGameSection />
+      </div>
+
+      <div ref={projectsSectionRef} className={`max-w-5xl mx-auto px-4 py-8 transition-all duration-700 ease-out ${projectsSectionRefVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <ProjectsSection />
       </div>
     </div>
