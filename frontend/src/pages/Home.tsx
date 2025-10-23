@@ -21,23 +21,23 @@ const Home: React.FC = () => {
         <HeroContentSwitcher />
       </div>
 
-      <div ref={socialsRef} className={`max-w-5xl mx-auto px-4 py-8 transition-all duration-700 ease-out ${socialsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+      <div ref={socialsRef} className={`py-8 transition-all duration-700 ease-out ${socialsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <Socials />
       </div>
 
-      <div ref={imageSectionsRef} className={`max-w-5xl mx-auto px-4 py-8 transition-all duration-700 ease-out ${imageSectionsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+      <div ref={imageSectionsRef} className={`py-8 transition-all duration-700 ease-out ${imageSectionsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <ImageSections />
       </div>
 
-      <div ref={leetCodeRef} className={`max-w-5xl mx-auto px-4 py-8 transition-all duration-700 ease-out ${leetCodeVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+      <div ref={leetCodeRef} className={`py-8 transition-all duration-700 ease-out ${leetCodeVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <LeetCode />
       </div>
 
-      <div ref={miniGameRef} className={`max-w-5xl mx-auto px-4 py-8 transition-all duration-700 ease-out ${miniGameVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+      <div ref={miniGameRef} className={`py-8 transition-all duration-700 ease-out ${miniGameVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <MiniGameSection />
       </div>
 
-      <div ref={projectsSectionRef} className={`max-w-5xl mx-auto px-4 py-8 transition-all duration-700 ease-out ${projectsSectionRefVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+      <div ref={projectsSectionRef} className={`py-8 transition-all duration-700 ease-out ${projectsSectionRefVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <ProjectsSection />
       </div>
     </div>

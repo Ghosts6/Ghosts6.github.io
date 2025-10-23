@@ -11,8 +11,8 @@ const socials = [
 
 const Socials: React.FC = () => {
   return (
-    <div className="mt-16">
-      <div className="max-w-4xl mx-auto bg-secondary dark:bg-dark-secondary p-8 rounded-lg shadow-md text-center">
+    <div className="max-w-5xl mx-auto px-4">
+      <div className="bg-secondary dark:bg-dark-secondary p-8 rounded-lg shadow-md text-center">
         <h2 className="text-3xl font-bold mb-4 text-accent dark:text-dark-accent">🌐 Socials</h2>
         <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-items-center"> {/* Added justify-items-center */}
           {socials.map((social) => (

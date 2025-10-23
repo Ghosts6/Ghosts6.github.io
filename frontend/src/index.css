@@ -12,10 +12,10 @@
   }
 
   body.dark {
-    --scrollbar-track: theme('colors.dark-primary');
+    --scrollbar-track: #1F2937;
     --scrollbar-thumb: #4A5568;
     --scrollbar-thumb-hover: #718096;
-    --scrollbar-border: theme('colors.dark-primary');
+    --scrollbar-border: #1F2937;
   }
 
   ::-webkit-scrollbar {
@@ -83,4 +83,38 @@
   .leet-btn {
     @apply cursor-pointer h-11 leading-[2.75rem] w-52 inline-block text-white no-underline font-tahoma uppercase text-center text-sm font-bold tracking-widest p-0 border-2 border-leet rounded-leet bg-leet transition duration-300 relative overflow-hidden hover:text-gray-800 hover:bg-leet-hover;
   }
+}
+
+/* pure css*/
+@keyframes waveFadeIn {
+  0% {
+    transform: rotate(0deg) translateY(0);
+    opacity: 0;
+  }
+  30% {
+    transform: rotate(5deg) translateY(-5px);
+    opacity: 1;
+  }
+  60% {
+    transform: rotate(-5deg) translateY(3px);
+  }
+  100% {
+    transform: rotate(0deg) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-wave {
+  animation: waveFadeIn 1.2s ease forwards;
 }

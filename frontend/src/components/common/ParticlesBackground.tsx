@@ -88,7 +88,19 @@ const ParticlesBackground: React.FC = () => {
           value: { min: 1, max: 5 },
         },
       },
-      detectRetina: false,
+      detectRetina: true,
+      responsive: [
+        {
+          breakpoint: 740,
+          options: {
+            particles: {
+              number: {
+                value: 65,
+              },
+            },
+          },
+        },
+      ],
     }),
     [isDarkMode],
   );

@@ -22,11 +22,16 @@ module.exports = {
           '40%': { transform: 'translateY(-10px)' },
           '60%': { transform: 'translateY(-6px)' },
         },
+        'text-slide': {
+          "0%, 100%": { transform: "translateY(0%)" },
+          "50%": { transform: "translateY(-10%)" },
+        },
       },
       animation: {
         movingColor: 'movingColor 10s infinite',
         gradient: 'gradient 3s ease infinite',
         'bounce-up': 'bounce-up 1.5s infinite',
+        'text-slide': 'text-slide 2s ease-in-out infinite',
       },
       backgroundImage: {
         gradientColor: 'linear-gradient(45deg, #a6e3ff, #85d3c8, #c7b3ff)',
@@ -94,5 +99,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar')],
 }

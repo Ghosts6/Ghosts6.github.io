@@ -65,12 +65,12 @@ const imageSections = [
 
 const ImageSections: React.FC = () => {
   return (
-    <>
+    <div className="max-w-5xl mx-auto px-4">
       {imageSections.map((section) => (
         <div key={section.title} className="mt-16">
-          <div className="max-w-4xl mx-auto bg-secondary dark:bg-dark-secondary p-8 rounded-lg shadow-md text-center">
+          <div className="bg-secondary dark:bg-dark-secondary p-8 rounded-lg shadow-md text-center">
             <h2 className="text-3xl font-bold mb-4 text-accent dark:text-dark-accent">{section.title}</h2>
-            <div className={`flex justify-center gap-8 ${section.title === '🏆 GitHub Trophies' ? 'flex-nowrap overflow-x-auto' : 'flex-wrap'}`}>
+            <div className={`flex justify-center gap-8 ${section.title === '🏆 GitHub Trophies' ? 'flex-nowrap overflow-x-auto scrollbar scrollbar-thin scrollbar-thumb-rounded-full scrollbar-thumb-accent dark:scrollbar-thumb-dark-accent scrollbar-track-secondary dark:scrollbar-track-dark-secondary' : 'flex-wrap'}`}>
               {section.images.map((image) => (
                 <img
                   key={image.src}
@@ -88,7 +88,7 @@ const ImageSections: React.FC = () => {
           </div>
         </div>
       ))}
-    </>
+    </div>
   );
 };
 

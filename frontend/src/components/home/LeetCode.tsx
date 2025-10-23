@@ -2,8 +2,8 @@ import React from 'react';
 
 const LeetCode: React.FC = () => {
   return (
-    <div className="mt-16">
-      <div className="max-w-4xl mx-auto bg-secondary dark:bg-dark-secondary p-8 rounded-lg shadow-md text-center">
+    <div className="max-w-5xl mx-auto px-4">
+      <div className="bg-secondary dark:bg-dark-secondary p-8 rounded-lg shadow-md text-center">
         <img src="static/img/leet_code.svg" alt="leetCodeIcon" className="w-12 h-12 mx-auto mb-4" />
         <h2 className="text-3xl font-bold mb-4 text-accent dark:text-dark-accent">LeetCode</h2>
         <p className="text-lg leading-relaxed">
