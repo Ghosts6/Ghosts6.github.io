@@ -15,7 +15,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, media, po
     <div className="bg-secondary dark:bg-dark-secondary rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:-translate-y-1 flex flex-col w-96">
       <a href={link} target="_blank" rel="noopener noreferrer">
         {isVideo ? (
-          <video controls autoPlay loop muted poster={poster} className="w-full h-48 object-cover">
+          <video controls loop muted poster={poster} className="w-full h-48 object-cover">
             <source src={media} type="video/webm" />
             Your browser does not support the video tag.
           </video>

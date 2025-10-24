@@ -3,6 +3,7 @@ import React from 'react';
 const techStack = [
   { name: 'Python', icon: 'static/icon/python.png' },
   { name: 'JavaScript', icon: 'static/icon/javascript.png' },
+  { name: 'TypeScript', icon: 'static/icon/ts.png' },
   { name: 'Java', icon: 'static/icon/Java.png' },
   { name: 'C/C++', icon: 'static/icon/c++.png' },
   { name: 'Django', icon: 'static/icon/django.png' },

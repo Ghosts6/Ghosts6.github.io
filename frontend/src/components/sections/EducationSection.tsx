@@ -9,8 +9,13 @@ const EducationSection: React.FC = () => {
           <span className="font-semibold">Bachelor of Computer Science: Software</span> - York University, Toronto, Ontario, Canada
           <p className="text-md text-gray-600 dark:text-gray-400">Expected Graduation: 02/2025</p>
         </li>
-        <li>
-          <span className="font-semibold">Languages:</span> English (Professional), Persian (Professional)
+        <li className="flex flex-col sm:flex-row">
+          <span className="font-semibold mr-2">Languages:</span>
+          <div className="flex flex-col sm:flex-row sm:gap-2">
+            <span>English (Professional)</span>
+            <span className="hidden sm:inline">, </span>
+            <span>Persian (Professional)</span>
+          </div>
         </li>
       </ul>
     </div>
