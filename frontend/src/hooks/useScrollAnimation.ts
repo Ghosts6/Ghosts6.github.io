@@ -5,12 +5,14 @@ const useScrollAnimation = (threshold = 0.1, rootMargin = '0px'): [RefObject<HTM
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    const node = ref.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          // Optionally, unobserve after it becomes visible if animation should only play once
-          observer.unobserve(entry.target);
+          if (node) {
+            observer.unobserve(node);
+          }
         }
       },
       {
@@ -19,16 +21,16 @@ const useScrollAnimation = (threshold = 0.1, rootMargin = '0px'): [RefObject<HTM
       }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    if (node) {
+      observer.observe(node);
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (node) {
+        observer.unobserve(node);
       }
     };
-  }, [threshold, rootMargin]);
+  }, [threshold, rootMargin, ref]);
 
   return [ref, isVisible];
 };

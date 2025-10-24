@@ -63,6 +63,7 @@ const HeroContentSwitcher: React.FC = () => {
   );
 
   // Inline greeting animation
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const letters = ['H', 'e', 'y', ' ', 't', 'h', 'e', 'r', 'e', '!'];
 
   return (
