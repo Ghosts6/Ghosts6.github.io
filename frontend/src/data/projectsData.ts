@@ -8,7 +8,7 @@ export const projectsData = [
   {
     title: 'WeatherNews',
     description: `My weather project is created with Django and includes pages like Home and Weather. Home page: check weather news about cities worldwide, storms, tornadoes, floods, and weather in your location. Weather page: search any city to receive data like weather, temperature, wind speed, and time.`,
-    media: 'static/video/weatherDemo.mp4',
+    media: 'static/video/weatherDemo.webm',
     poster: 'static/img/weather_news.png',
     link: 'https://github.com/Ghosts6/weather_news',
   },
@@ -21,7 +21,8 @@ export const projectsData = [
   {
     title: 'To-Do List',
     description: `The To-Do List Application is a task management tool built with Django. It features a robust backend with REST API and ORM, and a user-friendly frontend using HTML, CSS, and JavaScript. Manage tasks, authenticate users, reset passwords, and access FAQs with ease.`,
-    media: 'static/img/Thumbnail .png',
+    media: 'static/video/Todo.webm',
+    poster: 'static/img/Thumbnail .png',
     link: 'https://github.com/Ghosts6/To-Do-List',
   },
   {
