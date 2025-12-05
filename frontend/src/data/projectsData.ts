@@ -6,6 +6,13 @@ export const projectsData = [
     link: 'https://github.com/Ghosts6/ai-platform',
   },
   {
+    title: 'WeatherNews',
+    description: `My weather project is created with Django and includes pages like Home and Weather. Home page: check weather news about cities worldwide, storms, tornadoes, floods, and weather in your location. Weather page: search any city to receive data like weather, temperature, wind speed, and time.`,
+    media: 'static/video/weatherDemo.mp4',
+    poster: 'static/img/weather_news.png',
+    link: 'https://github.com/Ghosts6/weather_news',
+  },
+  {
     title: 'Client Count',
     description: `A system designed to count and manage clients. This tool is useful for businesses needing to track customer flow or user engagement. It provides real-time data and analytics to help understand client traffic patterns.`,
     media: 'static/img/client_count.jpg',
@@ -61,13 +68,6 @@ export const projectsData = [
     description: `Inside this repo I placed two C++ codes and a Python code to optimize Linux and Windows OS. With the help of these files, you can optimize your system and make it faster. Reminder: for Windows, run as administrator; for Linux, use sudo. To compile C++ code: 'gpp -o optimize optimize.cpp' or 'g++ -o optimize optimize.cpp'. The Python code performs similar optimization with a few extra features for Linux.`,
     media: 'static/img/optimize.jpg',
     link: 'https://github.com/Ghosts6/optimize_os',
-  },
-  {
-    title: 'WeatherNews',
-    description: `My weather project is created with Django and includes pages like Home and Weather. Home page: check weather news about cities worldwide, storms, tornadoes, floods, and weather in your location. Weather page: search any city to receive data like weather, temperature, wind speed, and time.`,
-    media: 'static/video/weather_news.webm',
-    poster: 'static/img/weather_news.png',
-    link: 'https://github.com/Ghosts6/weather_news',
   },
   {
     title: 'V2ray & OpenVPN',
