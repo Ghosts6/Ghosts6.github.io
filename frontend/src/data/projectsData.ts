@@ -2,7 +2,8 @@ export const projectsData = [
   {
     title: 'AI Agent',
     description: `An advanced AI platform that provides intelligent agent services. This project showcases cutting-edge AI capabilities, allowing users to interact with smart agents for various tasks. It is built with scalability and performance in mind, utilizing modern AI frameworks.`,
-    media: 'static/img/ai_agent.png',
+    media: 'static/video/AiAgent.webm',
+    poster: 'static/img/ai_agent.png',
     link: 'https://github.com/Ghosts6/ai-platform',
   },
   {
