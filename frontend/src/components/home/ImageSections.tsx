@@ -5,17 +5,17 @@ const imageSections = [
     title: '📊 GitHub Stats',
     images: [
       {
-        src: 'https://github-readme-stats.vercel.app/api?username=Ghosts6&theme=chartreuse-dark&hide_border=false&include_all_commits=true&count_private=true',
+        src: 'https://github-readme-stats-eight-theta.vercel.app/api?username=Ghosts6&theme=chartreuse-dark&hide_border=false&include_all_commits=true&count_private=true',
         alt: 'GitHub Stats',
         errorSrc: 'static/error/old-stats.png',
       },
       {
-        src: 'https://github-readme-streak-stats.herokuapp.com/?user=Ghosts6&theme=chartreuse-dark&hide_border=false',
+        src: 'https://streak-stats.demolab.com/?user=Ghosts6&theme=chartreuse-dark&hide_border=false',
         alt: 'GitHub Streak Stats',
         errorSrc: 'static/error/old-streak.png',
       },
       {
-        src: 'https://github-readme-stats.vercel.app/api/top-langs/?username=Ghosts6&theme=chartreuse-dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact',
+        src: 'https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Ghosts6&theme=chartreuse-dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact',
         alt: 'Top Languages',
         errorSrc: 'static/error/old-langs.png',
       },

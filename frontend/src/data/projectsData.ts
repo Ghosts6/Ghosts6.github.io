@@ -83,4 +83,10 @@ export const projectsData = [
     media: 'static/img/Blogging.png',
     link: 'https://github.com/Ghosts6/Blogging-System',
   },
+  {
+    title: 'World Cup Tournament Manager',
+    description: `Coming soon! Currently under development, this PHP, JS, and Tailwind project is a comprehensive platform for managing and simulating the FIFA World Cup 2026.`,
+    media: 'static/img/coming_soon.jpg',
+    link: '#',
+  },
 ];
