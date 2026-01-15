@@ -14,6 +14,13 @@ export const projectsData = [
     link: 'https://github.com/Ghosts6/weather_news',
   },
   {
+    title: 'World Cup',
+    description: `This project is a simple web application for managing World Cup tournaments. It allows users to create and manage tournaments, teams, and matches, and to generate tournament summaries.`,
+    media: 'static/video/worldCup.webm',
+    poster: 'static/img/world_cup.png',
+    link: 'https://github.com/Ghosts6/World-Cup-Manager',
+  },
+  {
     title: 'Client Count',
     description: `A system designed to count and manage clients. This tool is useful for businesses needing to track customer flow or user engagement. It provides real-time data and analytics to help understand client traffic patterns.`,
     media: 'static/img/client_count.jpg',
@@ -84,8 +91,8 @@ export const projectsData = [
     link: 'https://github.com/Ghosts6/Blogging-System',
   },
   {
-    title: 'World Cup Tournament Manager',
-    description: `Coming soon! Currently under development, this PHP, JS, and Tailwind project is a comprehensive platform for managing and simulating the FIFA World Cup 2026.`,
+    title: 'Coming soon!',
+    description: `Under construction.`,
     media: 'static/img/coming_soon.jpg',
     link: '#',
   },
