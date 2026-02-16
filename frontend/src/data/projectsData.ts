@@ -14,6 +14,13 @@ export const projectsData = [
     link: 'https://github.com/Ghosts6/weather_news',
   },
   {
+    title: 'System Metrics',
+    description: `Cross-platform system metrics and log analytics platform. This project provides comprehensive monitoring and analysis of system performance across various operating systems. It collects and visualizes metrics such as CPU usage, memory consumption, disk activity, and network traffic, offering insights into system health and performance trends.`,
+    media: 'static/video/SystemMetrics.webm',
+    poster: 'static/img/SystemMetrics.png',
+    link: 'https://github.com/Ghosts6/system-metrics',
+  },
+  {
     title: 'World Cup',
     description: `This project is a simple web application for managing World Cup tournaments. It allows users to create and manage tournaments, teams, and matches, and to generate tournament summaries.`,
     media: 'static/video/worldCup.webm',
@@ -90,10 +97,10 @@ export const projectsData = [
     media: 'static/img/Blogging.png',
     link: 'https://github.com/Ghosts6/Blogging-System',
   },
-  {
-    title: 'Coming soon!',
-    description: `Under construction.`,
-    media: 'static/img/coming_soon.jpg',
-    link: '#',
-  },
+  // {
+  //   title: 'Coming soon!',
+  //   description: `Under construction.`,
+  //   media: 'static/img/coming_soon.jpg',
+  //   link: '#',
+  // },
 ];
