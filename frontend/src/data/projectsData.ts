@@ -97,10 +97,10 @@ export const projectsData = [
     media: 'static/img/Blogging.png',
     link: 'https://github.com/Ghosts6/Blogging-System',
   },
-  // {
-  //   title: 'Coming soon!',
-  //   description: `Under construction.`,
-  //   media: 'static/img/coming_soon.jpg',
-  //   link: '#',
-  // },
+  {
+    title: 'Coming soon!',
+    description: `Under construction.`,
+    media: 'static/img/coming_soon.jpg',
+    link: '#',
+  },
 ];
