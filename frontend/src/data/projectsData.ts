@@ -1,5 +1,12 @@
 export const projectsData = [
   {
+    title: 'WeatherNews',
+    description: `My weather project is created with Django and includes pages like Home and Weather. Home page: check weather news about cities worldwide, storms, tornadoes, floods, and weather in your location. Weather page: search any city to receive data like weather, temperature, wind speed, and time.`,
+    media: 'static/video/weatherDemo.webm',
+    poster: 'static/img/weather_news.png',
+    link: 'https://github.com/Ghosts6/weather_news',
+  },
+  {
     title: 'AI Agent',
     description: `An advanced AI platform that provides intelligent agent services. This project showcases cutting-edge AI capabilities, allowing users to interact with smart agents for various tasks. It is built with scalability and performance in mind, utilizing modern AI frameworks.`,
     media: 'static/video/AiAgent.webm',
@@ -7,11 +14,11 @@ export const projectsData = [
     link: 'https://github.com/Ghosts6/ai-platform',
   },
   {
-    title: 'WeatherNews',
-    description: `My weather project is created with Django and includes pages like Home and Weather. Home page: check weather news about cities worldwide, storms, tornadoes, floods, and weather in your location. Weather page: search any city to receive data like weather, temperature, wind speed, and time.`,
-    media: 'static/video/weatherDemo.webm',
-    poster: 'static/img/weather_news.png',
-    link: 'https://github.com/Ghosts6/weather_news',
+    title: 'Web Content Scraper',
+    description: `A browser extension that extracts structured content from any webpage and exports it in multiple formats including **JSON, XML, Markdown, and plaintext**.`,
+    media: 'static/video/WebScraper.webm',
+    poster: 'static/img/WebScraper.png',
+    link: 'https://github.com/Ghosts6/Web-Content-Scraper-Extension',
   },
   {
     title: 'System Metrics',
@@ -97,10 +104,10 @@ export const projectsData = [
     media: 'static/img/Blogging.png',
     link: 'https://github.com/Ghosts6/Blogging-System',
   },
-  {
-    title: 'Coming soon!',
-    description: `Under construction.`,
-    media: 'static/img/coming_soon.jpg',
-    link: '#',
-  },
+  // {
+  //   title: 'Coming soon!',
+  //   description: `Under construction.`,
+  //   media: 'static/img/coming_soon.jpg',
+  //   link: '#',
+  // },
 ];
