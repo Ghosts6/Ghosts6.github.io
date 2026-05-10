@@ -58,7 +58,7 @@ const Header: React.FC = () => {
               <i className="fas fa-globe"></i>
             </a>
             <a
-              href="https://ir.linkedin.com/in/kiarashbashokian"
+              href="https://www.linkedin.com/in/kiarashbashokian/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xl text-text dark:text-dark-text hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200 hover:scale-110 active:scale-90"
