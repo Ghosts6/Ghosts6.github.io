@@ -21,6 +21,15 @@ export const projectsData = [
     link: 'https://github.com/Ghosts6/Web-Content-Scraper-Extension',
   },
   {
+    "title": 'TubeForge',
+    "description": 'A browser extension that improves youtube.com with distraction controls (Shorts, feed filters, Focus Mode), playback helpers (speed memory, theater, loop A-B), Lazy Mode for Shorts, screenshots, stats overlay, per-video notes, and optional Return Dislikes.',
+    "media": 'static/video/TubeForge.webm',
+    "poster": 'static/img/TubeForge.jpg',
+    "link": '#',
+    "chromeLink": '#',
+    "firefoxLink": '#'
+  },
+  {
     title: 'System Metrics',
     description: `Cross-platform system metrics and log analytics platform. This project provides comprehensive monitoring and analysis of system performance across various operating systems. It collects and visualizes metrics such as CPU usage, memory consumption, disk activity, and network traffic, offering insights into system health and performance trends.`,
     media: 'static/video/SystemMetrics.webm',
@@ -104,10 +113,10 @@ export const projectsData = [
     media: 'static/img/Blogging.png',
     link: 'https://github.com/Ghosts6/Blogging-System',
   },
-  // {
-  //   title: 'Coming soon!',
-  //   description: `Under construction.`,
-  //   media: 'static/img/coming_soon.jpg',
-  //   link: '#',
-  // },
+  {
+    title: 'Coming soon!',
+    description: `Under construction.`,
+    media: 'static/img/coming_soon.jpg',
+    link: '#',
+  },
 ];

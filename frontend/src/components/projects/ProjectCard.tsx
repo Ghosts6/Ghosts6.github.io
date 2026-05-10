@@ -6,10 +6,25 @@ interface ProjectCardProps {
   media: string;
   poster?: string;
   link: string;
+  chromeLink?: string;
+  firefoxLink?: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, media, poster, link }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, media, poster, link, chromeLink, firefoxLink }) => {
   const isVideo = media.endsWith('.webm');
+
+  const getActiveLink = () => {
+    if (!chromeLink && !firefoxLink) return link;
+
+    const userAgent = navigator.userAgent.toLowerCase();
+    if (userAgent.includes('firefox')) {
+      return firefoxLink || link;
+    }
+    // Default to chromeLink if available, or fall back to link
+    return chromeLink || link;
+  };
+
+  const activeLink = getActiveLink();
 
   return (
     <div className="bg-secondary dark:bg-dark-secondary rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:-translate-y-1 flex flex-col w-96">
@@ -22,7 +37,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, media, po
           <img src={media} alt={title} className="w-full h-48 object-cover" />
         )}
       <div className="p-6 flex-grow flex flex-col">
-        <a href={link} target="_blank" rel="noopener noreferrer">
+        <a href={activeLink} target="_blank" rel="noopener noreferrer">
           <h3 className="text-2xl font-bold text-accent dark:text-dark-accent hover:underline">{title}</h3>
         </a>
         <p
