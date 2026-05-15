@@ -25,9 +25,9 @@ export const projectsData = [
     "description": 'A browser extension that improves youtube.com with distraction controls (Shorts, feed filters, Focus Mode), playback helpers (speed memory, theater, loop A-B), Lazy Mode for Shorts, screenshots, stats overlay, per-video notes, and optional Return Dislikes.',
     "media": 'static/video/TubeForge.webm',
     "poster": 'static/img/TubeForge.jpg',
-    "link": '#',
-    "chromeLink": '#',
-    "firefoxLink": '#'
+    "link": 'https://chromewebstore.google.com/detail/fnjcmfmhfakopibpafnalgbmafcjggnj?utm_source=item-share-cb',
+    "chromeLink": 'https://chromewebstore.google.com/detail/fnjcmfmhfakopibpafnalgbmafcjggnj?utm_source=item-share-cb',
+    "firefoxLink": 'https://addons.mozilla.org/en-CA/firefox/addon/tubeforge/'
   },
   {
     title: 'System Metrics',
