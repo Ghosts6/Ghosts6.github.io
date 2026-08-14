@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply font-sans text-base antialiased;
+  }
+
   body {
     @apply bg-primary text-text dark:bg-dark-primary dark:text-dark-text;
     --scrollbar-track: theme('colors.primary');
@@ -16,6 +20,10 @@
     --scrollbar-thumb: #4A5568;
     --scrollbar-thumb-hover: #718096;
     --scrollbar-border: #1F2937;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
   }
 
   ::-webkit-scrollbar {
@@ -51,11 +59,11 @@
   }
 
   .custom-h2 {
-    @apply text-3xl font-bold mb-4;
+    @apply font-display text-3xl font-bold mb-4;
   }
 
   .custom-p {
-    @apply text-lg leading-relaxed;
+    @apply text-lg leading-relaxed max-w-prose;
   }
 
   .social-li {
@@ -81,11 +89,10 @@
   }
 
   .leet-btn {
-    @apply cursor-pointer h-11 leading-[2.75rem] w-52 inline-block text-white no-underline font-tahoma uppercase text-center text-sm font-bold tracking-widest p-0 border-2 border-leet rounded-leet bg-leet transition duration-300 relative overflow-hidden hover:text-gray-800 hover:bg-leet-hover;
+    @apply cursor-pointer h-11 leading-[2.75rem] w-52 inline-block text-white no-underline font-sans uppercase text-center text-sm font-bold tracking-widest p-0 border-2 border-leet rounded-leet bg-leet transition duration-300 relative overflow-hidden hover:text-gray-800 hover:bg-leet-hover;
   }
 }
 
-/* pure css*/
 @keyframes waveFadeIn {
   0% {
     transform: rotate(0deg) translateY(0);
@@ -117,4 +124,23 @@
 
 .animate-wave {
   animation: waveFadeIn 1.2s ease forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-wave,
+  .animate-text-slide,
+  .animate-bounce-up,
+  .animate-gradient,
+  .animate-movingColor {
+    animation: none !important;
+  }
 }

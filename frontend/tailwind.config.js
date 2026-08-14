@@ -47,25 +47,12 @@ module.exports = {
         'dark-accent': '#60A5FA',
         'dark-accent-hover': '#3B82F6',
         'dark-text': '#F3F4F6',
-        
         'sun-yellow': '#FBBF24',
         'moon-blue': '#93C5FD',
-        
-        sectionBg: '#2e4053',
-        sectionBorder: '#1ad50d',
-        sectionBorderDark: '#0be9f0',
-        projectVideo: '#1ad50d',
-        projectVideoDark: '#0be9f0',
         leet: {
           DEFAULT: '#17C3B2',
           hover: '#0B5563',
         },
-        gradientStart: '#00a8fd',
-        gradientEnd: '#ff69b4',
-        gradientHoverStart: '#00ffff',
-        gradientHoverEnd: '#ff00ff',
-        gradientActiveStart: '#008080',
-        gradientActiveEnd: '#ff1493',
       },
       boxShadow: {
         projectDefault: '0 8px 15px rgba(0, 0, 0, 0.2)',
@@ -89,7 +76,8 @@ module.exports = {
         tightest: '.1rem',
       },
       fontFamily: {
-        tahoma: ['Tahoma', 'sans-serif'],
+        sans: ['"IBM Plex Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        display: ['"Space Grotesk"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       flex: {
         '1': '1 1 48%',

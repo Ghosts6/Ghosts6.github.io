@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
     <footer className="bg-primary dark:bg-dark-primary shadow-md mt-8">
       <div className="container mx-auto px-4 py-6 text-text dark:text-dark-text">
         <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-4 md:space-y-0">
-          <p>&copy; 2025 Kiarash Bashokian. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Kiarash Bashokian. All rights reserved.</p>
           <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
             <a href="mailto:kiarash@kiarashbashokian.com" className="hover:text-accent dark:hover:text-dark-accent flex items-center">
               <i className="fas fa-envelope"></i>

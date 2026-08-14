@@ -6,8 +6,8 @@ const Projects: React.FC = () => {
   return (
     <div className="text-text dark:text-dark-text">
       <div className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl md:text-6xl font-bold text-center text-accent dark:text-dark-accent relative overflow-hidden">
-          <span className="block animate-text-slide">My Projects</span>
+        <h1 className="font-display text-4xl md:text-6xl font-bold text-center text-accent dark:text-dark-accent relative overflow-hidden">
+          <span className="block animate-text-slide motion-reduce:animate-none">My Projects</span>
         </h1>
 
         <div className="flex flex-wrap justify-center gap-8 mt-16">

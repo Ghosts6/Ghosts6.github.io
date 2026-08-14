@@ -10,8 +10,10 @@ const DarkModeToggle: React.FC<DarkModeToggleProps> = ({ displayText = false }) 
 
   return (
     <button
+      type="button"
       onClick={() => toggleDarkMode()}
-      className="bg-transparent border-none cursor-pointer p-0 m-0 text-2xl text-text dark:text-dark-text focus:outline-none transition-transform duration-200 hover:scale-110 active:scale-95"
+      aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+      className="bg-transparent border-none cursor-pointer min-h-[44px] min-w-[44px] inline-flex items-center justify-center text-2xl text-text dark:text-dark-text focus:outline-none focus-visible:ring-2 focus-visible:ring-accent transition-transform duration-200 hover:scale-110 active:scale-95"
     >
       {displayText ? (
         <span>{isDarkMode ? 'Light Mode' : 'Dark Mode'}</span>

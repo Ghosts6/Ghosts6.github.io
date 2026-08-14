@@ -75,7 +75,12 @@ const TriviaQuiz: React.FC<TriviaQuizProps> = ({ onGameEnd, onRestart }) => {
   };
 
   if (questions.length === 0) {
-    return <div className="min-h-[350px] flex items-center justify-center">Loading...</div>;
+    return (
+      <div className="min-h-[350px] flex flex-col items-center justify-center gap-3" role="status" aria-live="polite">
+        <div className="loader-inner" aria-hidden="true" />
+        <p className="text-base text-text/70 dark:text-dark-text/70">Loading trivia…</p>
+      </div>
+    );
   }
 
   const renderContent = () => {

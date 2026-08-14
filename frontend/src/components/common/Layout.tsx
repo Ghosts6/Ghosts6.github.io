@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import ScrollToTopButton from './ScrollToTopButton';
-import ParticlesBackground from './ParticlesBackground';
+
+const ParticlesBackground = lazy(() => import('./ParticlesBackground'));
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -10,8 +11,10 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-screen">
-      <ParticlesBackground />
+    <div className="relative flex flex-col min-h-screen font-sans">
+      <Suspense fallback={null}>
+        <ParticlesBackground />
+      </Suspense>
       <Header />
       <main className="flex-grow">{children}</main>
       <Footer />

@@ -16,7 +16,7 @@ const techStack = [
   { name: 'SQLite', icon: 'static/icon/sqlite.png' },
   { name: 'Oracle', icon: 'static/icon/Oracle.png' },
   { name: 'MongoDB', icon: 'static/icon/mongo.png' },
-  { name: 'Redis', icon: 'static/icon/Redis.png' }, 
+  { name: 'Redis', icon: 'static/icon/Redis.png' },  
   { name: 'React.js', icon: 'static/icon/React.png' },
   { name: 'HTML5', icon: 'static/icon/html.png' },
   { name: 'CSS3', icon: 'static/icon/css.png' },

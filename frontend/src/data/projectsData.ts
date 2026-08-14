@@ -53,7 +53,7 @@ export const projectsData = [
     title: 'To-Do List',
     description: `The To-Do List Application is a task management tool built with Django. It features a robust backend with REST API and ORM, and a user-friendly frontend using HTML, CSS, and JavaScript. Manage tasks, authenticate users, reset passwords, and access FAQs with ease.`,
     media: 'static/video/Todo.webm',
-    poster: 'static/img/Thumbnail .png',
+    poster: 'static/img/Thumbnail.png',
     link: 'https://github.com/Ghosts6/To-Do-List',
   },
   {

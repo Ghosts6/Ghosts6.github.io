@@ -6,14 +6,25 @@ import useDarkMode from '../../hooks/useDarkMode';
 const ParticlesBackground: React.FC = () => {
   const [init, setInit] = useState(false);
   const [isDarkMode] = useDarkMode();
+  const [reduceMotion, setReduceMotion] = useState(false);
 
   useEffect(() => {
+    const media = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const update = () => setReduceMotion(media.matches);
+    update();
+    media.addEventListener('change', update);
+    return () => media.removeEventListener('change', update);
+  }, []);
+
+  useEffect(() => {
+    if (reduceMotion) return;
+
     initParticlesEngine(async (engine) => {
       await loadSlim(engine);
     }).then(() => {
       setInit(true);
     });
-  }, []);
+  }, [reduceMotion]);
 
   const options = useMemo(
     () => ({
@@ -105,6 +116,15 @@ const ParticlesBackground: React.FC = () => {
     [isDarkMode],
   );
 
+  if (reduceMotion) {
+    return (
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-primary via-primary to-secondary dark:from-dark-primary dark:via-dark-primary dark:to-dark-secondary"
+      />
+    );
+  }
+
   if (init) {
     return (
       <div style={{ position: 'absolute', zIndex: -1, top: 0, left: 0, width: '100%', height: '100%' }}>
@@ -117,7 +137,7 @@ const ParticlesBackground: React.FC = () => {
     );
   }
 
-  return <></>;
+  return null;
 };
 
 export default ParticlesBackground;

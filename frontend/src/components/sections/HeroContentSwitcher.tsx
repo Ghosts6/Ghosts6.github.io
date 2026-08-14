@@ -56,7 +56,7 @@ const HeroContentSwitcher: React.FC = () => {
   };
 
   const getButtonClasses = (section: SectionKey) => (
-    `flex-1 px-4 py-3 text-lg font-semibold transition-colors duration-300 relative z-10
+    `flex-1 min-h-[44px] px-4 py-3 text-lg font-semibold transition-colors duration-300 relative z-10
     ${activeSection === section
       ? 'text-accent dark:text-dark-accent'
       : 'text-text dark:text-dark-text hover:text-accent dark:hover:text-dark-accent hover:bg-gray-100 dark:hover:bg-gray-800'}`
@@ -79,12 +79,15 @@ const HeroContentSwitcher: React.FC = () => {
         }
       `}</style>
       <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-6xl font-bold text-accent dark:text-dark-accent flex flex-col items-center justify-center">
+        <p className="font-display text-sm md:text-base font-semibold tracking-wide uppercase text-accent dark:text-dark-accent mb-3">
+          Ghosts6
+        </p>
+        <h1 className="font-display text-4xl md:text-6xl font-bold text-accent dark:text-dark-accent flex flex-col items-center justify-center">
           <span
             className="inline-block animate-wave opacity-0"
             style={{ animation: 'waveFadeIn 1.2s ease forwards' }}
           >
-            Hey there! 👋
+            Hey there!
           </span>
           <span
             className="inline-block opacity-0"
@@ -94,8 +97,8 @@ const HeroContentSwitcher: React.FC = () => {
           </span>
         </h1>
 
-        <p className="mt-4 text-lg md:text-xl text-text dark:text-dark-text">
-          A passionate Computer Science student with a love for web development.
+        <p className="mt-4 text-lg md:text-xl text-text dark:text-dark-text max-w-prose mx-auto">
+          Backend developer building scalable web systems in Toronto.
         </p>
       </div>
 

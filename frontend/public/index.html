@@ -23,33 +23,56 @@
     <meta property="og:url" content="https://ghosts6.github.io/">
     <meta property="og:title" content="Kiarash Bashokian - Backend Developer">
     <meta property="og:description" content="The personal portfolio of Kiarash Bashokian, a passionate Computer Science student and backend developer specializing in building robust web applications.">
-    <meta property="og:image" content="%PUBLIC_URL%/static/img/Thumbnail.png">
+    <meta property="og:image" content="https://ghosts6.github.io/static/img/Thumbnail.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://ghosts6.github.io/">
     <meta property="twitter:title" content="Kiarash Bashokian - Backend Developer">
     <meta property="twitter:description" content="The personal portfolio of Kiarash Bashokian, a passionate Computer Science student and backend developer specializing in building robust web applications.">
-    <meta property="twitter:image" content="%PUBLIC_URL%/static/img/Thumbnail.png">
+    <meta property="twitter:image" content="https://ghosts6.github.io/static/img/Thumbnail.png">
 
     <!-- Verification -->
     <meta name="google-site-verification" content="w358AduLG9pPp2CvYg9fb8D_YgbMMI3dly2AwB_dhA0" />
 
+    <!-- Fonts: Space Grotesk (display) + IBM Plex Sans (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "Ghosts6",
+          "url": "https://ghosts6.github.io/",
+          "description": "Personal portfolio of Kiarash Bashokian, backend developer."
+        },
+        {
+          "@type": "Person",
+          "name": "Kiarash Bashokian",
+          "alternateName": "Ghosts6",
+          "url": "https://ghosts6.github.io/",
+          "jobTitle": "Backend Developer",
+          "email": "kiarash@kiarashbashokian.com",
+          "sameAs": [
+            "https://github.com/Ghosts6",
+            "https://www.linkedin.com/in/kiarashbashokian/",
+            "https://kiarashbashokian.com/"
+          ]
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script',
-        'https://www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-XXXXX-Y', 'auto');
-        ga('send', 'pageview');
-    </script>
   </body>
 </html>
