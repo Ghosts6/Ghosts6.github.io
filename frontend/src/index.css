@@ -91,6 +91,26 @@
   .leet-btn {
     @apply cursor-pointer h-11 leading-[2.75rem] w-52 inline-block text-white no-underline font-sans uppercase text-center text-sm font-bold tracking-widest p-0 border-2 border-leet rounded-leet bg-leet transition duration-300 relative overflow-hidden hover:text-gray-800 hover:bg-leet-hover;
   }
+
+  .section-reveal {
+    @apply opacity-0 translate-y-4 transition-[opacity,transform] duration-500 ease-out will-change-[opacity,transform];
+  }
+
+  .section-reveal-visible {
+    @apply opacity-100 translate-y-0;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-reveal {
+    transform: none;
+    transition: opacity 300ms ease-out;
+    will-change: opacity;
+  }
+
+  .section-reveal-visible {
+    transform: none;
+  }
 }
 
 @keyframes waveFadeIn {
@@ -140,7 +160,11 @@
   .animate-text-slide,
   .animate-bounce-up,
   .animate-gradient,
-  .animate-movingColor {
+  .animate-movingColor,
+  .section-reveal {
     animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
   }
 }

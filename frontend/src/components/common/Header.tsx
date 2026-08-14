@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { Link, useLocation } from "react-router-dom";
 import DarkModeToggle from "./DarkModeToggle";
 
@@ -17,14 +18,35 @@ const Header: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    if (isMenuOpen) {
-      const previous = document.body.style.overflow;
-      document.body.style.overflow = "hidden";
-      return () => {
-        document.body.style.overflow = previous;
-      };
-    }
-    return undefined;
+    if (!isMenuOpen) return undefined;
+
+    const scrollY = window.scrollY;
+    const { style } = document.body;
+    const previous = {
+      overflow: style.overflow,
+      position: style.position,
+      top: style.top,
+      left: style.left,
+      right: style.right,
+      width: style.width,
+    };
+
+    style.overflow = "hidden";
+    style.position = "fixed";
+    style.top = `-${scrollY}px`;
+    style.left = "0";
+    style.right = "0";
+    style.width = "100%";
+
+    return () => {
+      style.overflow = previous.overflow;
+      style.position = previous.position;
+      style.top = previous.top;
+      style.left = previous.left;
+      style.right = previous.right;
+      style.width = previous.width;
+      window.scrollTo(0, scrollY);
+    };
   }, [isMenuOpen]);
 
   useEffect(() => {
@@ -43,6 +65,101 @@ const Header: React.FC = () => {
       active ? "after:scale-x-100 text-accent dark:text-dark-accent font-semibold" : "after:scale-x-0 hover:after:scale-x-100",
     ].join(" ");
   };
+
+  const mobileMenuItems = [
+    { label: "Home", href: "/", external: false },
+    { label: "Projects", href: "/projects", external: false },
+    { label: "Portfolio", href: "https://kiarashbashokian.com/", external: true },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/kiarashbashokian/", external: true },
+    { label: "GitHub", href: "https://github.com/Ghosts6", external: true },
+  ];
+
+  const mobileMenu = (
+    <>
+      {isMenuOpen && (
+        <div
+          className="fixed inset-0 bg-black/80 backdrop-blur-sm z-40 md:hidden"
+          onClick={toggleMenu}
+          aria-hidden="true"
+        />
+      )}
+
+      <div
+        id="mobile-menu"
+        className={`fixed inset-y-0 right-0 z-50 w-64 max-w-[85vw] bg-primary dark:bg-dark-primary shadow-lg md:hidden transition-transform duration-300 ease-in-out ${
+          isMenuOpen ? "translate-x-0 pointer-events-auto" : "translate-x-full pointer-events-none"
+        }`}
+        style={{ height: "100dvh" }}
+        aria-hidden={!isMenuOpen}
+      >
+        <div className="flex h-full flex-col overflow-y-auto overscroll-contain">
+          <div className="flex shrink-0 justify-end p-4">
+            <button
+              type="button"
+              onClick={toggleMenu}
+              aria-label="Close menu"
+              className="min-h-[44px] min-w-[44px] inline-flex items-center justify-center text-text dark:text-dark-text focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <nav className="flex flex-1 flex-col items-center gap-6 px-4 pb-8" aria-label="Mobile">
+            {mobileMenuItems.map((item) => {
+              const content = (
+                <span
+                  className={`relative group text-2xl min-h-[44px] inline-flex items-center transition-transform duration-200 hover:scale-110 active:scale-95 ${
+                    !item.external && location.pathname === item.href
+                      ? "text-accent dark:text-dark-accent font-semibold"
+                      : "text-text dark:text-dark-text"
+                  }`}
+                >
+                  {item.label}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent dark:bg-dark-accent transition-all duration-300 group-hover:w-full" />
+                </span>
+              );
+
+              return item.external ? (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={toggleMenu}
+                >
+                  {content}
+                </a>
+              ) : (
+                <Link key={item.label} to={item.href} onClick={toggleMenu}>
+                  {content}
+                </Link>
+              );
+            })}
+
+            <div className="border-t border-gray-300 dark:border-gray-600 w-3/4 my-2" />
+
+            <div className="min-h-[44px] flex items-center">
+              <DarkModeToggle displayText={true} />
+            </div>
+          </nav>
+        </div>
+      </div>
+    </>
+  );
 
   return (
     <>
@@ -126,90 +243,7 @@ const Header: React.FC = () => {
         </div>
       </header>
 
-      <div
-        id="mobile-menu"
-        className={`fixed top-0 right-0 h-screen w-64 bg-primary dark:bg-dark-primary shadow-lg z-50 transform transition-transform duration-300 ease-in-out ${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
-        } md:hidden overflow-y-auto`}
-      >
-        <div className="flex justify-end p-4">
-          <button
-            type="button"
-            onClick={toggleMenu}
-            aria-label="Close menu"
-            className="min-h-[44px] min-w-[44px] inline-flex items-center justify-center text-text dark:text-dark-text focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
-        </div>
-
-        <nav className="flex flex-col items-center space-y-6 mt-8" aria-label="Mobile">
-          {[
-            { label: "Home", href: "/", external: false },
-            { label: "Projects", href: "/projects", external: false },
-            { label: "Portfolio", href: "https://kiarashbashokian.com/", external: true },
-            { label: "LinkedIn", href: "https://www.linkedin.com/in/kiarashbashokian/", external: true },
-            { label: "GitHub", href: "https://github.com/Ghosts6", external: true },
-          ].map((item) => {
-            const content = (
-              <span
-                className={`relative group text-2xl min-h-[44px] inline-flex items-center transition-transform duration-200 hover:scale-110 active:scale-95 ${
-                  !item.external && location.pathname === item.href
-                    ? "text-accent dark:text-dark-accent font-semibold"
-                    : "text-text dark:text-dark-text"
-                }`}
-              >
-                {item.label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent dark:bg-dark-accent transition-all duration-300 group-hover:w-full"></span>
-              </span>
-            );
-
-            return item.external ? (
-              <a
-                key={item.label}
-                href={item.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={toggleMenu}
-              >
-                {content}
-              </a>
-            ) : (
-              <Link key={item.label} to={item.href} onClick={toggleMenu}>
-                {content}
-              </Link>
-            );
-          })}
-
-          <div className="border-t border-gray-300 dark:border-gray-600 w-3/4 my-4"></div>
-
-          <div className="pt-4 min-h-[44px] flex items-center">
-            <DarkModeToggle displayText={true} />
-          </div>
-        </nav>
-      </div>
-
-      {isMenuOpen && (
-        <div
-          className="fixed inset-0 bg-black/80 backdrop-blur-sm z-40 md:hidden"
-          onClick={toggleMenu}
-          aria-hidden="true"
-        ></div>
-      )}
+      {typeof document !== "undefined" ? createPortal(mobileMenu, document.body) : null}
     </>
   );
 };
