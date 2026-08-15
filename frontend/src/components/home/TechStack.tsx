@@ -16,6 +16,7 @@ const techStack = [
   { name: 'SQLite', icon: 'static/icon/sqlite.png' },
   { name: 'Oracle', icon: 'static/icon/Oracle.png' },
   { name: 'MongoDB', icon: 'static/icon/mongo.png' },
+  { name: 'Elasticsearch', icon: 'static/icon/elasticsearch.png' },
   { name: 'Redis', icon: 'static/icon/Redis.png' },  
   { name: 'React.js', icon: 'static/icon/React.png' },
   { name: 'HTML5', icon: 'static/icon/html.png' },
@@ -24,12 +25,15 @@ const techStack = [
   { name: 'Tailwind CSS', icon: 'static/icon/Tailwind CSS.png' },
   { name: 'Git', icon: 'static/icon/Git.png' },
   { name: 'Docker', icon: 'static/icon/docker.png' },
+  { name: 'Kubernetes', icon: 'static/icon/kubernetes.png' },
   { name: 'pytest', icon: 'static/icon/pytest.png' },
+  { name: 'Jest', icon: 'static/icon/jest.png' },
   { name: 'Postman', icon: 'static/icon/Postman.png' }, 
   { name: 'Nginx', icon: 'static/icon/nginx.png' },
   { name: 'Apache', icon: 'static/icon/apache.png' },
   { name: 'Linux', icon: 'static/icon/linux.png' },
   { name: 'Bash', icon: 'static/icon/bash.png' },
+  { name: 'Ragflow', icon: 'static/icon/ragflow.svg' },
 ];
 
 const TechStack: React.FC = () => {

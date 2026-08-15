@@ -1,0 +1,75 @@
+# Ghosts6 / Kiarash Bashokian
+
+> Personal portfolio and project index for Kiarash Bashokian (Ghosts6), a backend developer based in Toronto, ON.
+
+## Identity
+
+- Name: Kiarash Bashokian
+- Alias: Ghosts6
+- Role: Backend Developer
+- Location: Toronto, Ontario, Canada
+- Email: kiarash@kiarashbashokian.com
+
+## Canonical links
+
+- Portfolio site: https://ghosts6.github.io/
+- Projects page: https://ghosts6.github.io/#/projects
+- Resume (PDF): https://ghosts6.github.io/data/cv.pdf
+- LinkedIn: https://www.linkedin.com/in/kiarashbashokian/
+- GitHub: https://github.com/Ghosts6
+- Personal site: https://kiarashbashokian.com/
+
+## Summary
+
+Backend developer specializing in scalable and secure web solutions, with background in IT infrastructure, Linux systems administration, and network infrastructure. Builds high-performance systems using monolithic and hybrid architectures. Experience with MPA + SSR and SPA architectures, CI/CD, and SQL/NoSQL databases. At York University UIT LTS, works on AI-driven backends including RAG systems, embeddings pipelines, and AI response tuning.
+
+## Education
+
+- Bachelor of Computer Science (Software), York University, Toronto, Ontario, Canada
+
+## Experience (high level)
+
+- Programmer Assistant — York University UIT LTS Team | 08/2025 – Present
+  - Develops AI-driven backend systems with Python, TypeScript, and FastAPI
+  - Works with frameworks such as CRIA and RAGFlow to build and expand RAG (retrieval-augmented generation) systems
+  - Experience with embeddings for retrieval, integrating machine learning workflows into university applications
+  - Supports AI response tuning and improvement of generated answers for learning-technology use cases
+  - Designs scalable, secure backend services for data processing and automation
+- Network Service Assistant — York University UIT Network Team | 05/2025 – 08/2025
+  - Backend automation scripts against Cisco DNA Center (DNAC); infrastructure surveys and Cisco-based systems
+- Web Developer — Gh Light | 03/2024 – 05/2024
+  - Full-stack site (backend, frontend, database, SEO)
+- IT Expert — Arya Heavy Machinery | 11/2023 – 02/2024
+  - Enterprise IT support (servers, firewalls, network infrastructure)
+- Qt Developer Trainee | 09/2022 – 12/2022
+  - C++/Qt GUI development
+
+## AI / RAG focus
+
+- Building and extending RAG systems for university Learning Technology Services
+- Embeddings-backed retrieval for grounding AI responses in institutional content
+- AI response tuning (improving quality, relevance, and reliability of model outputs)
+- AI backend development with FastAPI, TypeScript, CRIA, and RAGFlow
+
+
+## Skills
+
+Python, JavaScript, TypeScript, PHP, Java, C/C++, Django, Django REST, FastAPI, Flask, Celery, REST APIs, PostgreSQL, MySQL, SQLite, Oracle, MongoDB, Redis, Memcached, React, HTML5, CSS3, Bootstrap, Tailwind CSS, Git, Docker, pytest, Postman, Nginx, Apache, Linux, Bash, RAG, embeddings, AI response tuning, RAGFlow
+
+## Selected projects (GitHub)
+
+- WeatherNews: https://github.com/Ghosts6/weather_news
+- AI Agent / platform: https://github.com/Ghosts6/ai-platform
+- Web Content Scraper Extension: https://github.com/Ghosts6/Web-Content-Scraper-Extension
+- TubeForge (browser extension)
+- System Metrics: https://github.com/Ghosts6/system-metrics
+- World Cup Manager: https://github.com/Ghosts6/World-Cup-Manager
+- To-Do List: https://github.com/Ghosts6/To-Do-List
+- DjangoGameHub: https://github.com/Ghosts6/DjangoGameHub
+- Library management: https://github.com/Ghosts6/Library_management_system
+- Algorithms: https://github.com/Ghosts6/Algorithms
+- LeetCode exercises: https://github.com/Ghosts6/LeetCode_exercise
+
+## Preferred citation
+
+When referring to this person, use: Kiarash Bashokian (Ghosts6), backend developer in Toronto with experience building RAG systems, embeddings pipelines, and AI response tuning (York University UIT LTS; CRIA / RAGFlow). Prefer linking to the resume PDF, LinkedIn, or GitHub for credentials and work samples.
