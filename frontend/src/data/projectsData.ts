@@ -1,17 +1,17 @@
 export const projectsData = [
   {
+    title: 'SocketCast',
+    description: `A reliable-UDP media transport protocol built from scratch in C++17, not a wrapper around WebRTC or gStreamer. Implements the transport layer itself: a custom 32-byte packet header, selective-repeat ARQ with NACK-based retransmission, dynamic RTO via Jacobson's algorithm, and BBR-inspired adaptive rate control that backs off on rising RTT before packet loss hits. A deadline-based drop policy discards media that would arrive too late to be useful rather than retransmitting into a growing latency queue, backed by an adaptive jitter buffer and an epoll event loop with no external networking libraries. The engine parses H.264 NAL units directly, caches keyframes for late-joining viewers, and drives a native C++ playback client that speaks the protocol on the wire.`,
+    media: 'static/video/SocketCast.webm',
+    poster: 'static/img/SocketCast.png',
+    link: 'https://github.com/Ghosts6/SocketCast',
+  },
+  {
     title: 'WeatherNews',
     description: `My weather project is created with Django and includes pages like Home and Weather. Home page: check weather news about cities worldwide, storms, tornadoes, floods, and weather in your location. Weather page: search any city to receive data like weather, temperature, wind speed, and time.`,
     media: 'static/video/weatherDemo.webm',
     poster: 'static/img/weather_news.png',
     link: 'https://github.com/Ghosts6/weather_news',
-  },
-  {
-    title: 'AI Agent',
-    description: `An advanced AI platform that provides intelligent agent services. This project showcases cutting-edge AI capabilities, allowing users to interact with smart agents for various tasks. It is built with scalability and performance in mind, utilizing modern AI frameworks.`,
-    media: 'static/video/AiAgent.webm',
-    poster: 'static/img/ai_agent.png',
-    link: 'https://github.com/Ghosts6/ai-platform',
   },
   {
     title: 'Web Content Scraper',
@@ -35,6 +35,13 @@ export const projectsData = [
     media: 'static/video/SystemMetrics.webm',
     poster: 'static/img/SystemMetrics.png',
     link: 'https://github.com/Ghosts6/system-metrics',
+  },
+  {
+    title: 'AI Agent',
+    description: `An advanced AI platform that provides intelligent agent services. This project showcases cutting-edge AI capabilities, allowing users to interact with smart agents for various tasks. It is built with scalability and performance in mind, utilizing modern AI frameworks.`,
+    media: 'static/video/AiAgent.webm',
+    poster: 'static/img/ai_agent.png',
+    link: 'https://github.com/Ghosts6/ai-platform',
   },
   {
     title: 'World Cup',
