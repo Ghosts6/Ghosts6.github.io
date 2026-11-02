@@ -37,6 +37,13 @@ export const projectsData = [
     link: 'https://github.com/Ghosts6/system-metrics',
   },
   {
+    title: 'KerniX',
+    description: `KerniX is a 32-bit x86 educational operating system kernel built from scratch using C and NASM Assembly. It implements memory management, multitasking, CPU scheduling, interrupts, synchronization, and user-mode processes. Runs on QEMU.`,
+    media: 'static/img/kernix.jpg',
+    // poster: 'static/img/kernix.jpg'
+    link: 'https://github.com/Ghosts6/KerniX',
+  },
+  {
     title: 'AI Agent',
     description: `An advanced AI platform that provides intelligent agent services. This project showcases cutting-edge AI capabilities, allowing users to interact with smart agents for various tasks. It is built with scalability and performance in mind, utilizing modern AI frameworks.`,
     media: 'static/video/AiAgent.webm',
