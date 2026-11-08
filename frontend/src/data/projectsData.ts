@@ -30,6 +30,13 @@ export const projectsData = [
     "firefoxLink": 'https://addons.mozilla.org/en-CA/firefox/addon/tubeforge/'
   },
   {
+    title: 'RiseUp',
+    description: `Sleep through alarms or keep forgetting tasks? RiseUp is a smart alarm and reminder system that won't let you off easy. To stop an alarm you solve a challenge or snap a photo of a chosen object, which AI vision checks. If you still don't get up, an AI agent escalates to SMS, calls, Alexa and finally an emergency contact. Type reminders in plain English, let AI rank what matters most, and chat with an assistant that sets alarms for you. It learns your habits over time and suggests better settings. Built in Java with Spring Boot, with a JavaFX desktop GUI and a full command-line client.`,
+    media: 'static/img/riseup.png',
+    // poster: '',
+    link: 'https://github.com/Ghosts6/RiseUp',
+  },
+  {
     title: 'System Metrics',
     description: `Cross-platform system metrics and log analytics platform. This project provides comprehensive monitoring and analysis of system performance across various operating systems. It collects and visualizes metrics such as CPU usage, memory consumption, disk activity, and network traffic, offering insights into system health and performance trends.`,
     media: 'static/video/SystemMetrics.webm',
@@ -127,10 +134,12 @@ export const projectsData = [
     media: 'static/img/Blogging.png',
     link: 'https://github.com/Ghosts6/Blogging-System',
   },
+/*  
   {
     title: 'Coming soon!',
     description: `Under construction.`,
     media: 'static/img/coming_soon.jpg',
     link: '#',
   },
+*/
 ];
